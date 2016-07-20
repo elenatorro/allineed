@@ -1,0 +1,70 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Colors
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$colors-base-font-color: #222;
+$colors-base:            #00c2e4;
+$colors-base-hover:      #0099b4;
+$colors-base-border:     #dedede;
+$colors-white:           #FFFFFF;
+
+// Primary
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$colors-primary-background-hover:   #0099b4;
+$colors-primary-background:         #00c2e4;
+$colors-primary-border-hover:       #0099b4;
+$colors-primary-border:             #00c2e4;
+$colors-primary-hover:              $colors-white;
+$colors-primary:                    $colors-white;
+
+
+// Success
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$colors-success-background-hover:   #00aa25;
+$colors-success-background:         #00e432;
+$colors-success-border-hover:       #00aa25;
+$colors-success-border:             #00e432;
+$colors-success-hover:              $colors-white;
+$colors-success:                    $colors-white;
+
+// Warning
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$colors-warning-background-hover:   #c77508;
+$colors-warning-background:         #ff9200;
+$colors-warning-border-hover:       #c77508;
+$colors-warning-border:             #ff9200;
+$colors-warning-hover:              $colors-white;
+$colors-warning:                    $colors-white;
+
+// Danger
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$colors-danger-background-hover:   #b8002c;
+$colors-danger-background:         #ff003d;
+$colors-danger-border-hover:       #b8002c;
+$colors-danger-border:             #ff003d;
+$colors-danger-hover:              $colors-white;
+$colors-danger:                    $colors-white;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Fonts
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$base-font-family:                 $font-family-open-sans;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Lines
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$base-border-style:               1px solid $colors-base-border;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Media Queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$base-media-phablet-max:           750px;
+$base-media-phablet-min:           650px;
+$base-media-phone-min:             400px;

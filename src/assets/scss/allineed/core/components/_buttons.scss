@@ -1,0 +1,115 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$button-border-radius:                   $base-elements-border-radius;
+$button-border:                          1px solid $colors-base;
+$button-color:                           $colors-base;
+$button-font-size:                       0.8em;
+$button-font-weight:                     600px;
+$button-height:                          $base-texts-height;
+$button-hover-border:                    $colors-base-hover;
+$button-hover-color:                     $colors-base-hover;
+$button-hover-background-color:          transparent;
+$button-letter-spacing:                  .1rem;
+$button-padding:                         0 30px;
+$button-margin:                          5px 0;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Buttons
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color:    transparent;
+  border-radius:       $button-border-radius;
+  border:              $button-border;
+  box-sizing:          border-box;
+  color:               $button-color;
+  cursor:              pointer;
+  display:             inline-block;
+
+  font-size:           $button-font-size;
+  font-weight:         $button-font-weight;
+  height:              $button-height;
+  letter-spacing:      $button-letter-spacing;
+  line-height:         $button-height;
+  margin:              $button-margin;
+  padding:             $button-padding;
+
+  text-align:          center;
+  text-decoration:     none;
+  text-transform:      uppercase;
+  white-space:         nowrap;
+
+  &:hover, &:focus {
+   color:        $button-hover-color;
+   border-color: $button-hover-border;
+   outline:      0;
+  }
+
+  &.button-primary {
+   color:            $colors-primary;
+   background-color: $colors-primary-background;
+   border-color:     $colors-primary-border;
+
+   &:hover, &:focus {
+    color:            $colors-primary-hover;
+    background-color: $colors-primary-background-hover;
+    border-color:     $colors-primary-border-hover;
+   }
+  }
+
+  &.button-success {
+   color:            $colors-success;
+   background-color: $colors-success-background;
+   border-color:     $colors-success-border;
+
+   &:hover, &:focus {
+    color:            $colors-success-hover;
+    background-color: $colors-success-background-hover;
+    border-color:     $colors-success-border-hover;
+   }
+  }
+
+  &.button-warning {
+   color:            $colors-warning;
+   background-color: $colors-warning-background;
+   border-color:     $colors-warning-border;
+
+   &:hover, &:focus {
+    color:            $colors-warning-hover;
+    background-color: $colors-warning-background-hover;
+    border-color:     $colors-warning-border-hover;
+   }
+  }
+
+  &.button-danger {
+   color:            $colors-danger;
+   background-color: $colors-danger-background;
+   border-color:     $colors-danger-border;
+
+   &:hover, &:focus {
+    color:            $colors-danger-hover;
+    background-color: $colors-danger-background-hover;
+    border-color:     $colors-danger-border-hover;
+   }
+  }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Media Queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@media (max-width: $base-media-phablet-max) {
+ .button,
+ button,
+ input[type="submit"],
+ input[type="reset"],
+ input[type="button"] {
+  width: 100%;
+ }
+}

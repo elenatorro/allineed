@@ -1,0 +1,94 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$navbar-line-height:         3rem;
+$navbar-line-height-phablet: 5rem;
+$navbar-border-bottom:       $base-border-style;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Navbar
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.navbar,
+.navbar-spacer {
+  display: block;
+  position: relative;
+  margin-bottom: $navbar-line-height;
+  width: 100%;
+  height: $navbar-line-height;
+  z-index: 99;
+  border-bottom: $navbar-border-bottom;
+}
+
+.navbar-spacer {
+  display: none;
+}
+
+.navbar > .container {
+  width: 100%;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navbar-item {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  padding: 0 1rem;
+  margin: 0;
+  text-decoration: none;
+  line-height: $navbar-line-height;
+  color: #222;
+  display: block;
+  height: 100%;
+
+  &:hover {
+   background-color: $colors-primary-background;
+  }
+}
+
+.navbar-link.active {
+  color: #33C3F0;
+}
+
+.has-docked-nav .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.has-docked-nav .navbar-spacer {
+  display: block;
+}
+
+.has-docked-nav .navbar > .container {
+  width: 100%;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Media Queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@media (max-width: $base-media-phablet-max) {
+
+ .navbar,
+ .navbar-spacer {
+  border: none;
+  height: 100%;
+ }
+ .navbar-item {
+  width: 100%;
+  border-bottom: $navbar-border-bottom;
+ }
+}

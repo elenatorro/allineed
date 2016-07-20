@@ -1,0 +1,22 @@
+{
+  "name": "ES6StartKit",
+  "description": "ES6 Start Kit",
+  "main": "gulpfile.js",
+  "authors": [
+    "Elena Torro <elenatorro@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "amd",
+    "es6",
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

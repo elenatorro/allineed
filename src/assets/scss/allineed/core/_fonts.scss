@@ -1,0 +1,125 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$font-family-arvo:              'Arvo';
+$font-family-arvo-bold:         'Arvo Bold';
+$font-family-arvo-italic:       'Arvo Italic';
+
+$font-family-droid-sans:        'Droid Sans';
+$font-family-droid-sans-bold:   'Droid Sans Bold';
+
+$font-family-lato:              'Lato';
+$font-family-lato-bold:         'Lato Bold';
+$font-family-lato-italic:       'Lato Italic';
+$font-family-lato-light:        'Lato Light';
+
+$font-family-open-sans:         'Open Sans';
+$font-family-open-sans-bold:    'Open Sans Bold';
+$font-family-open-sans-italic:  'Open Sans Italic';
+$font-family-open-sans-light:   'Open Sans Light';
+
+$font-family-raleway:           'Raleway';
+$font-family-raleway-bold:      'Raleway Bold';
+$font-family-raleway-italic:    'Raleway Italic';
+$font-family-raleway-light:     'Raleway Light';
+
+// Arvo
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@font-face {
+ font-family: 'Arvo';
+ src: url(../fonts/Arvo/Arvo-Regular.ttf);
+}
+
+@font-face {
+ font-family: 'Arvo Bold';
+ src: url(../fonts/Arvo/Arvo-Bold.ttf);
+}
+
+@font-face {
+ font-family: 'Arvo Italic';
+ src: url(../fonts/Arvo/Arvo-Italic.ttf);
+}
+
+// Droid Sans
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@font-face {
+ font-family: 'Droid Sans';
+ src: url(../fonts/Droid_Sans/DroidSans.ttf);
+}
+
+@font-face {
+ font-family: 'Droid Sans';
+ src: url(../fonts/Droid_Sans/DroidSans-Bold.ttf);
+}
+
+// Lato
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@font-face {
+ font-family: 'Lato';
+ src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+ font-family: 'Lato Bold';
+ src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+ font-family: 'Lato Italic';
+ src: url(../fonts/Lato/Lato-Italic.ttf);
+}
+
+@font-face {
+ font-family: 'Lato Light';
+ src: url(../fonts/Lato/Lato-Light.ttf);
+}
+
+// Open Sans
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@font-face {
+ font-family: 'Open Sans';
+ src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+ font-family: 'Open Sans Bold';
+ src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+ font-family: 'Open Sans Italic';
+ src: url(../fonts/Open_Sans/OpenSans-Italic.ttf);
+}
+
+@font-face {
+ font-family: 'Open Sans Light';
+ src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+// Raleway
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@font-face {
+ font-family: 'Raleway';
+ src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+ font-family: 'Raleway Bold';
+ src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+
+@font-face {
+ font-family: 'Raleway Italic';
+ src: url(../fonts/Raleway/Raleway-Italic.ttf);
+}
+
+@font-face {
+ font-family: 'Raleway Light';
+ src: url(../fonts/Raleway/Raleway-Light.ttf);
+}

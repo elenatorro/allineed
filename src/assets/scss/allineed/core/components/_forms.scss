@@ -1,0 +1,148 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$form-input-background-color:  $colors-white;
+$form-input-border-radius:     $base-elements-border-radius;
+$form-input-border:            1px solid $colors-base-border;
+$form-input-height:            $base-texts-height;
+$form-input-padding:           6px 10px;
+
+$form-input-focus-border:      1px solid $colors-base-hover;
+
+$form-textarea-min-height:     $base-texts-height * 2;
+$form-textarea-padding:        6px 0;
+
+$form-label-margin:            0 0 .5rem 0;
+$form-label-body-margin:       0 .5rem 0 0;
+$form-label-font-weight:       600px;
+$form-label-body-font-weight:  normal;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Fonts
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  background-color: $form-input-background-color;
+  border-radius:    $form-input-border-radius;
+  border:           $form-input-border;
+  box-shadow:       none;
+  box-sizing:       border-box;
+  height:           $form-input-height;
+  padding:          $form-input-padding;
+
+  &.input-primary {
+   color: $colors-primary-background;
+   border-color: $colors-primary-border;
+  }
+
+  &.input-warning {
+   color: $colors-warning-background;
+   border-color: $colors-warning-border;
+  }
+
+  &.input-success {
+   color: $colors-success-background;
+   border-color: $colors-success-border;
+  }
+
+  &.input-danger {
+   color: $colors-danger-background;
+   border-color: $colors-danger-border;
+  }
+}
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
+textarea {
+  min-height:     $form-textarea-min-height;
+  padding-bottom: $form-textarea-padding;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border:  $form-input-focus-border;
+  outline: 0;
+
+  &.input-primary {
+   border-color: $colors-primary-border-hover;
+  }
+  &.input-success {
+   border-color: $colors-success-border-hover;
+  }
+  &.input-warning {
+   border-color: $colors-warning-border-hover;
+  }
+  &.input-danger {
+   border-color: $colors-danger-border-hover;
+  }
+}
+
+label,
+legend {
+  display:       block;
+  font-weight:   $form-label-font-weight;
+  margin-bottom: $form-label-margin;
+}
+
+fieldset {
+  padding:      0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display:     inline-block;
+  margin-left: $form-label-body-margin;
+  font-weight: $form-label-body-font-weight;
+}
+
+.form-control {
+ margin: 1rem 0;
+
+ &.input-primary {
+  color: $colors-primary-background;
+ }
+
+ &.input-success {
+  color: $colors-success-background;
+ }
+
+ &.input-warning {
+  color: $colors-warning-background;
+ }
+
+ &.input-danger {
+  color: $colors-danger-background;
+ }
+}
