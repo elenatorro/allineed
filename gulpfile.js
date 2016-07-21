@@ -11,16 +11,17 @@ var
 
 
 const paths = {
-    sourceHTML: './src/**/*.html',
+    baseDir: './',
+    sourceHTML: 'index.html',
     sourceJS: './src/**/*.js',
-    sourceSCSS: './src/assets/scss/app.scss',
-    watchSCSS: ['./src/assets/scss/*.scss', './src/assets/scss/**/*.scss'],
-    srcImages: './src/assets/images/**',
-    srcFonts: './src/assets/fonts/**/*',
-    dest: './build',
-    destImages: './build/assets/images/',
-    destFonts: './build/assets/fonts/',
-    destCSS: './build/assets/css/'
+    sourceSCSS: './src/allineed/allineed.scss',
+    watchSCSS: ['./src/allineed/core/*.scss', './src/assets/scss/**/*.scss'],
+    srcImages: './src/images/**',
+    srcFonts: './src/fonts/**/*',
+    dest: './',
+    destImages: './dist/assets/images/',
+    destFonts: './dist/assets/fonts/',
+    destCSS: './dist/assets/css/'
   },
   PRESETS = ['es2015'],
   SOURCES = [paths.sourceHTML],
@@ -31,12 +32,12 @@ const paths = {
 gulp.task('browserSync', function () {
   browserSync({
     server: {
-      baseDir: paths.dest
+      baseDir: paths.baseDir
     }
   })
 })
 
-gulp.task('build', function () {
+gulp.task('dist', function () {
   return gulp.src(SOURCES)
     .pipe(gulp.dest(paths.dest))
     .pipe(browserSync.reload({
@@ -45,7 +46,7 @@ gulp.task('build', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch(paths.sourceHTML, ['build'])
+  gulp.watch(paths.sourceHTML, ['dist'])
   gulp.watch(paths.sourceJS, ['babel'])
   gulp.watch(paths.watchSCSS, ['sass'])
 })
@@ -80,6 +81,6 @@ gulp.task('sass', function () {
 })
 
 
-gulp.task('default', ['babel', 'build', 'browserSync', 'sass', 'fonts', 'watch'])
+gulp.task('default', ['babel', 'dist', 'browserSync', 'sass', 'fonts', 'watch'])
 
-gulp.task('compile', ['babel', 'build', 'sass', 'fonts'])
+gulp.task('compile', ['babel', 'dist', 'sass', 'fonts'])
