@@ -14,7 +14,7 @@ const paths = {
     sourceHTML: './src/**/*.html',
     sourceJS: './src/**/*.js',
     sourceSCSS: './src/assets/scss/app.scss',
-    watchSCSS: './src/assets/scss/*.scss',
+    watchSCSS: ['./src/assets/scss/*.scss', './src/assets/scss/**/*.scss'],
     srcImages: './src/assets/images/**',
     srcFonts: './src/assets/fonts/**/*',
     dest: './build',
@@ -81,3 +81,5 @@ gulp.task('sass', function () {
 
 
 gulp.task('default', ['babel', 'build', 'browserSync', 'sass', 'fonts', 'watch'])
+
+gulp.task('compile', ['babel', 'build', 'sass', 'fonts'])
