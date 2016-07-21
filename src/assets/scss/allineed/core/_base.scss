@@ -136,6 +136,22 @@ p {
  text-align: center;
 }
 
+.u-text-primary {
+ color: $colors-primary-background;
+}
+
+.u-text-success {
+ color: $colors-success-background;
+}
+
+.u-text-danger {
+ color: $colors-danger-background;
+}
+
+.u-text-warning {
+ color: $colors-warning-background;
+}
+
 .container:after,
 .row:after,
 .u-cf {

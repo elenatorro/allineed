@@ -9,10 +9,12 @@ $link-color-hover: $colors-base-hover;
 // Link
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-a {
+a, a:active, a:visited {
   color: $link-color;
 }
 
 a:hover {
-  color: $link-color;
+ background-color: $link-color-hover;
+ color: $colors-primary;
+ text-decoration: none;
 }

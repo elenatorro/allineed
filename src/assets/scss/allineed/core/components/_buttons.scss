@@ -12,8 +12,8 @@ $button-hover-border:                    $colors-base-hover;
 $button-hover-color:                     $colors-base-hover;
 $button-hover-background-color:          transparent;
 $button-letter-spacing:                  .1rem;
-$button-padding:                         0 30px;
-$button-margin:                          5px 0;
+$button-padding:                         0 $base-padding-size;
+$button-margin:                          $base-margin-size 0;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Buttons
