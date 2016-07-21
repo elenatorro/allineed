@@ -2,11 +2,11 @@
     "name": "allineed",
     "version": "0.1.0",
     "description": "All I Need: Simple and minimalist CSS framework",
-    "main": "gulpfile.js",
+    "main": "assets/scss/allineed/allineed.css",
     "authors": [
         "Elena Torro <elenatorro@gmail.com>"
     ],
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "browser-sync": "^2.13.0",
         "del": "^2.2.1",

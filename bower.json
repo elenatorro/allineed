@@ -1,22 +1,23 @@
 {
-  "name": "ES6StartKit",
-  "description": "ES6 Start Kit",
-  "main": "gulpfile.js",
-  "authors": [
-    "Elena Torro <elenatorro@gmail.com>"
-  ],
-  "license": "ISC",
-  "moduleType": [
-    "amd",
-    "es6",
-    "node"
-  ],
-  "homepage": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    "name": "allineed",
+    "version": "0.1.0",
+    "description": "All I Need: Simple and minimalist CSS framework",
+    "main": "assets/scss/allineed/allineed.css",
+    "authors": [
+        "Elena Torro <elenatorro@gmail.com>"
+    ],
+    "license": "ISC",
+    "moduleType": [
+        "amd",
+        "es6",
+        "node"
+    ],
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
 }
