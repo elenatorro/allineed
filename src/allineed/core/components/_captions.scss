@@ -1,0 +1,41 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$caption-background-default-color: $base-color;
+$caption-border-radius:            $base-elements-border-radius;
+$caption-padding:                  1em 2em;
+$caption-color:                    $colors-white;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Captions
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.caption {
+ background: #EEE;
+ text-align: center;
+ border-radius: $caption-border-radius;
+ font-size: 1rem;
+ height: 30px;
+ line-height: 30px;
+ margin-bottom: .75rem;
+ font-weight: 600;
+ letter-spacing: .1rem;
+
+ &.caption-primary {
+  background-color: $colors-primary-background;
+ }
+
+ &.caption-success {
+  background-color: $colors-success-background;
+ }
+
+ &.caption-warning {
+  background-color: $colors-warning-background;
+ }
+
+ &.caption-danger {
+  background-color: $colors-danger-background;
+ }
+
+}

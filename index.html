@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All I Need CSS</title>
+	<link rel="stylesheet" href="dist/assets/css/allineed.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+
+	<!--  Header -->
+	<header>
+
+		<!--  Navbar -->
+		<nav id="main-navbar" class="navbar">
+			<div class="navbar-collapsed">
+				<a class="navbar-link" href="#main-navbar">Menu</a>
+			</div>
+			<div class="container">
+
+				<ul class="navbar-list">
+					<li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#components">Components</a>
+					</li>
+					<li class="navbar-item"><a class="navbar-link" href="https://github.com/elenatorro/allineed">Download</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+				</ul>
+
+			</div>
+		</nav>
+		<!--  / Navbar -->
+
+
+		<!--  Title -->
+
+		<section class="container u-text-centered">
+			<h1>All I need CSS</h1>
+			<h2>CSS simple and minimalist framework</h2>
+
+			<section class="u-centered">
+				<a type="button" name="button" class="button button-warning" href="https://github.com/elenatorro/allineed">Github</a>
+				<a type="button" name="button" class="button button-success" href="https://paypal.me/elenatorro">Donate</a>
+			</section>
+		</section>
+
+		<!--  / Title -->
+
+	</header>
+
+
+	<section class="container">
+		<section class="container-section">
+			<nav id="components" class="navbar">
+				<div class="container">
+					<ul class="navbar-list">
+						<li class="navbar-item"><a class="navbar-link" href="#grid">Grid</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#navbar">Navbar</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#buttons">Buttons</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#headings">Headings & Typography</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#tables">Tables</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#lists">Lists</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#panels">Panels</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#forms">Forms</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#blockquotes">Blockquotes</a></li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+	</section>
+
+	<section class="container">
+		<section id="grid" class="container-section">
+			<h3>Grid</h3>
+
+			<div class="row">
+				<div class="one column">
+					<div class="caption">One</div>
+				</div>
+				<div class="eleven columns">
+					<div class="caption">Eleven</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="two columns">
+					<div class="caption">Two</div>
+				</div>
+				<div class="ten columns">
+					<div class="caption">Ten</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="three columns">
+					<div class="caption">Three</div>
+				</div>
+				<div class="nine columns">
+					<div class="caption">Nine</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="four columns">
+					<div class="caption">Four</div>
+				</div>
+				<div class="eight columns">
+					<div class="caption">Eight</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="five columns">
+					<div class="caption">Five</div>
+				</div>
+				<div class="seven columns">
+					<div class="caption">Seven</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<div class="caption">Six</div>
+				</div>
+				<div class="six columns">
+					<div class="caption">Six</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="seven columns">
+					<div class="caption">Seven</div>
+				</div>
+				<div class="five columns">
+					<div class="caption">Five</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="eight columns">
+					<div class="caption">Eight</div>
+				</div>
+				<div class="four  columns">
+					<div class="caption">Four</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="nine columns">
+					<div class="caption">Nine</div>
+				</div>
+				<div class="three columns">
+					<div class="caption">Three</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="ten columns">
+					<div class="caption">Ten</div>
+				</div>
+				<div class="two columns">
+					<div class="caption">Two</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="eleven columns">
+					<div class="caption">Eleven</div>
+				</div>
+				<div class="one column">
+					<div class="caption">One</div>
+				</div>
+			</div>
+			</div>
+
+			<!--  Grid Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;one column&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;One&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;eleven columns&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;Eleven&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;two columns&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;Two&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;ten columns&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;Ten&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+		</section>
+
+		<!--  / Grid -->
+
+		<!--  Navbar  -->
+		<section id="navbar" class="container-section">
+			<h3>Navbar</h3>
+
+			<nav class="navbar">
+				<div class="navbar-collapsed">
+					<a class="navbar-link" href="#">Menu</a>
+				</div>
+				<div class="container">
+
+					<ul class="navbar-list">
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 1</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 2</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 3</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 4</a></li>
+					</ul>
+
+				</div>
+			</nav>
+
+			<!--  Navbar Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;nav class=&quot;navbar&quot;&gt;
+ &lt;div class=&quot;navbar-collapsed&quot;&gt;
+  &lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Menu&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;container&quot;&gt;
+
+  &lt;ul class=&quot;navbar-list&quot;&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+			</pre>
+
+		</section>
+
+		<!--  Buttons -->
+		<section id="buttons" class="container-section">
+			<h3>Buttons</h3>
+			<button type="button" name="button" class="button">Default</button>
+			<button type="button" name="button" class="button button-primary">Primary</button>
+			<button type="button" name="button" class="button button-success">Success</button>
+			<button type="button" name="button" class="button button-warning">Warning</button>
+			<button type="button" name="button" class="button button-danger">Danger</button>
+
+			<!--  Buttons code-->
+			<h5> > Code</h5>
+			<pre><code>&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
+		</section>
+		<!--  / Buttons -->
+
+		<!--  Headings & Typography -->
+		<section id="headings" class="container-section">
+
+			<div class="row">
+
+				<div class="six columns">
+
+					<h3>Headings</h3>
+
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+				</div>
+
+				<div class="six columns">
+
+					<h3>Typography</h3>
+
+					<p style="font-family: 'Arvo';">Arvo</p>
+					<p style="font-family: 'Arvo Bold';">Arvo Bold</p>
+					<p style="font-family: 'Arvo Italic';">Arvo Italic</p>
+
+					<p style="font-family: 'Droid Sans';">Droid Sans</p>
+					<p style="font-family: 'Droid Sans Bold';">Droid Sans Bold</p>
+
+					<p style="font-family: 'Lato';">Lato</p>
+					<p style="font-family: 'Lato Bold';">Lato Bold</p>
+					<p style="font-family: 'Lato Italic';">Lato Italic</p>
+					<p style="font-family: 'Lato Light';">Lato Light</p>
+
+					<p style="font-family: 'Open Sans';">Open Sans</p>
+					<p style="font-family: 'Open Sans Bold';">Open Sans Bold</p>
+					<p style="font-family: 'Open Sans Italic';">Open Sans Italic</p>
+					<p style="font-family: 'Open Sans Light';">Open Sans Light</p>
+
+					<p style="font-family: 'Raleway';">Raleway</p>
+					<p style="font-family: 'Raleway Bold';">Raleway Bold</p>
+					<p style="font-family: 'Raleway Italic';">Raleway Italic</p>
+					<p style="font-family: 'Raleway Light';">Raleway Light</p>
+
+				</div>
+			</div>
+		</section>
+
+		<!--  / Typography -->
+
+		<!--  Tables -->
+		<section id="tables" class="container-section">
+			<h3>Tables</h3>
+
+			<table class="u-full-width">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Location</th>
+						<th>Points</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Elena Torro</td>
+						<td>24</td>
+						<td>Spain</td>
+						<td>1234</td>
+					</tr>
+					<tr>
+						<td>Kiko Beats</td>
+						<td>24</td>
+						<td>Spain</td>
+						<td>1234</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!--  / Tables -->
+
+		<!--  Lists -->
+
+		<section id="lists" class="container-section">
+			<h3>Lists</h3>
+
+			<div class="row">
+				<div class="six columns">
+					<ul>
+						<li>Unordered lists</li>
+						<li>
+							List Item
+							<ul>
+								<li>List Nested Item</li>
+								<li>List Nested Item</li>
+							</ul>
+						</li>
+						<li>List Item</li>
+					</ul>
+				</div>
+				<div class="six columns">
+					<ol>
+						<li>Ordered List</li>
+						<li>
+							List Item
+							<ol>
+								<li>List Nested Item</li>
+								<li>List Nested Item</li>
+							</ol>
+						</li>
+						<li>List Item</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
+		<!--  / Lists -->
+
+		<!--  Panels -->
+
+		<section id="panels" class="container-section">
+			<h3>Panels</h3>
+
+			<div class="row">
+
+				<div class="six columns">
+					<section class="panel">
+						<header class="panel-header">
+							Panel Header
+						</header>
+						<section class="panel-body">
+							<p>Panel Body</p>
+
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+							animi, id est laborum et dolorum fuga.
+						</section>
+						<footer class="panel-footer">
+							Panel Footer
+						</footer>
+					</section>
+				</div>
+
+				<div class="three columns">
+					<section class="panel panel-primary">
+						<header class="panel-header">
+							Panel Primary
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+				<div class="three columns">
+					<section class="panel panel-success">
+						<header class="panel-header">
+							Panel Success
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="five columns">
+					<section class="panel panel-danger">
+						<header class="panel-header">
+							Panel Danger
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+				<div class="seven columns">
+					<section class="panel panel-warning">
+						<header class="panel-header">
+							Panel Warning
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+			</div>
+
+			<br>
+
+			<!--  Panels Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+
+ &lt;div class=&quot;five columns&quot;&gt;
+  &lt;section class=&quot;panel panel-danger&quot;&gt;
+   &lt;header class=&quot;panel-header&quot;&gt;
+    Panel Danger
+   &lt;/header&gt;
+   &lt;section class=&quot;panel-body&quot;&gt;
+    Panel Body
+   &lt;/section&gt;
+  &lt;/section&gt;
+ &lt;/div&gt;
+
+ &lt;div class=&quot;seven columns&quot;&gt;
+  &lt;section class=&quot;panel panel-warning&quot;&gt;
+   &lt;header class=&quot;panel-header&quot;&gt;
+    Panel Warning
+   &lt;/header&gt;
+   &lt;section class=&quot;panel-body&quot;&gt;
+    Panel Body
+   &lt;/section&gt;
+  &lt;/section&gt;
+ &lt;/div&gt;
+
+&lt;/div&gt;</code><pre>
+		</section>
+
+		<!--  / Panels  -->
+
+		<!--  Forms -->
+		<section id="forms" class="container-section">
+			<h3>Forms</h3>
+
+			<div class="row">
+				<div class="six columns">
+					<form id="form">
+
+						<div class="form-control">
+							<label for="emailInput">Email</label>
+							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="emailInput">
+						</div>
+
+						<div class="form-control">
+							<label for="genderInput">Gender</label>
+							<select class="u-full-width" id="genderInput">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+
+						<div class="form-control">
+							<label for="message">Your message</label>
+							<textarea class="u-full-width" placeholder="..." id="message"></textarea>
+						</div>
+
+						<div class="form-control">
+							<label for="sendResponse">
+								<input id="sendResponse" type="checkbox">
+								<span class="label-body">Send response</span>
+							</label>
+						</div>
+
+						<div class="form-control">
+							<input form="form" class="button-primary" type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+
+				<div class="six columns">
+					<form>
+
+						<div class="form-control input-primary">
+							<label for="input-primary">Primary Input</label>
+							<input class="u-full-width input-primary" type="text" placeholder="i.e: primary input" id="input-primary">
+							<sub>Input message primary</sub>
+						</div>
+
+						<div class="form-control input-success">
+							<label for="input-success">Success Input</label>
+							<input class="u-full-width input-success" type="text" placeholder="i.e: success input" id="input-success">
+							<sub>Input message success</sub>
+						</div>
+
+						<div class="form-control input-warning">
+							<label for="input-warning">Warning Input</label>
+							<input class="u-full-width input-warning" type="text" placeholder="i.e: warning input" id="input-warning">
+							<sub>Input message warning</sub>
+						</div>
+
+						<div class="form-control input-danger">
+							<label for="danger-input">Danger Input</label>
+							<input class="u-full-width input-danger" type="text" placeholder="i.e: danger input" id="danger-input">
+							<sub>Input message danger</sub>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<!--  Forms Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;six columns&quot;&gt;
+  &lt;form id=&quot;form&quot;&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;emailInput&quot;&gt;Email&lt;/label&gt;
+    &lt;input class=&quot;u-full-width&quot; type=&quot;email&quot; placeholder=&quot;test@mailbox.com&quot; id=&quot;emailInput&quot;&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;genderInput&quot;&gt;Gender&lt;/label&gt;
+    &lt;select class=&quot;u-full-width&quot; id=&quot;genderInput&quot;&gt;
+     &lt;option value=&quot;Male&quot;&gt;Male&lt;/option&gt;
+     &lt;option value=&quot;Female&quot;&gt;Female&lt;/option&gt;
+    &lt;/select&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;message&quot;&gt;Your message&lt;/label&gt;
+    &lt;textarea class=&quot;u-full-width&quot; placeholder=&quot;Hi Dave &amp;hellip;&quot; id=&quot;message&quot;&gt;&lt;/textarea&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;sendResponse&quot;&gt;
+     &lt;input id=&quot;sendResponse&quot; type=&quot;checkbox&quot;&gt;
+     &lt;span class=&quot;label-body&quot;&gt;Send response&lt;/span&gt;
+    &lt;/label&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;input form=&quot;form&quot; class=&quot;button-primary&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+   &lt;/div&gt;
+  &lt;/form&gt;
+ &lt;/div&gt;</code></pre>
+		</section>
+
+		<!--  / Forms -->
+
+		<!--  Blockquotes -->
+
+		<section id="blockquotes" class="container-section">
+			<h3>Blockquotes</h3>
+
+			<div class="row">
+				<div class="twelve columns">
+
+					<blockquote class="blockquote" cite="http://elenatorro.github.io">
+						This is a blockquote.
+					</blockquote>
+
+					<blockquote class="blockquote blockquote-primary" cite="http://elenatorro.github.io">
+						This is a blockquote.
+					</blockquote>
+
+					<blockquote class="blockquote blockquote-success" cite="http://elenatorro.github.io">
+						This is a blockquote.
+					</blockquote>
+
+					<blockquote class="blockquote blockquote-warning" cite="http://elenatorro.github.io">
+						This is a blockquote.
+					</blockquote>
+
+					<blockquote class="blockquote blockquote-danger" cite="http://elenatorro.github.io">
+						This is a blockquote.
+					</blockquote>
+				</div>
+			</div>
+
+			<!--  Blockquotes Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;twelve columns&quot;&gt;
+
+  &lt;blockquote class=&quot;blockquote&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-primary&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-success&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-warning&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-danger&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code><pre>
+		</section>
+
+		<!--  / Blockquotes -->
+	</section>
+
+	<footer class="container u-text-centered">
+		<p>Based on <a href="http://getskeleton.com/">Skeleton</a></p>
+		<p>Copyright All I Need CSS | Made with
+			<span class="u-text-danger">&#x2764;</span> by <a href="http://elenatorro.github.io/">Elena Torró.</a>
+		</p>
+	</footer>
+</body>
+
+</html>

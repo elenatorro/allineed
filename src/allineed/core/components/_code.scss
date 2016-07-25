@@ -1,0 +1,34 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$code-background-color:           $colors-white;
+$code-border-radius:              $base-elements-border-radius;
+$code-border:                     1px solid $colors-base-border;
+$code-font-size:                  $base-font-size;
+$code-margin:                     0 .2rem;
+$code-padding:                    .2rem .5rem;
+
+$pre-code-padding:                 1rem 1.5rem;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Code
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+code {
+  background-color: $code-background-color;
+  border-radius:    $code-border-radius;
+  border:           $code-border;
+  display:          block;
+  font-size:        $code-font-size;
+  margin:           $code-margin;
+  padding:          $code-padding;
+  white-space:      nowrap;
+  overflow: scroll;
+}
+
+pre > code {
+  display:     block;
+  padding:     $pre-code-padding;
+  white-space: pre;
+}

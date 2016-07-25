@@ -1,0 +1,115 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$navbar-line-height:                 3rem;
+$navbar-line-height-phablet:         5rem;
+$navbar-border-bottom:               $base-border-style;
+
+$navbar-link-color:                  $colors-base-border;
+$navbar-background-hover-color:      $colors-base-hover;
+$navbar-link-hover-color:            $colors-white;
+$navbar-background-color:            transparent;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Navbar
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.navbar,
+.navbar-collapsed {
+  display: block;
+  position: relative;
+  margin-bottom: $navbar-line-height;
+  width: 100%;
+  height: $navbar-line-height;
+  z-index: 99;
+  border-bottom: $navbar-border-bottom;
+
+  > .panel {
+   position: absolute;
+  }
+}
+
+.navbar-collapsed {
+  display: none;
+  margin-bottom: 0;
+}
+
+.navbar > .container {
+  width: 100%;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navbar-item {
+  border-bottom: $navbar-border-bottom;
+  cursor: pointer;
+  float: left;
+  margin-bottom: 0;
+  position: relative;
+
+  > div {
+   display: none;
+
+   &:target {
+    display: block;
+   }
+  }
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  padding: 0 1rem;
+  margin: 0;
+  text-decoration: none;
+  line-height: $navbar-line-height;
+  display: block;
+  height: 100%;
+
+  &:hover {
+   background-color: $navbar-background-hover-color;
+   color: $navbar-link-hover-color;
+  }
+}
+
+.navbar-link.active {
+  color: $navbar-link-color;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Media Queries
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@media (max-width: $base-media-phablet-max) {
+
+ .navbar,
+ .navbar-collapsed {
+  border: none;
+  height: 100%;
+ }
+
+ .navbar-item {
+  width: 100%;
+  border-bottom: $navbar-border-bottom;
+ }
+
+ #main-navbar:not(:target) {
+   .navbar-item {
+     display: none;
+   }
+
+   .navbar-collapsed {
+     display: block;
+   }
+  }
+
+  #main-navbar:target {
+     display: block;
+  }
+}
