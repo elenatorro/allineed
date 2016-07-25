@@ -14,16 +14,18 @@
 	<header>
 
 		<!--  Navbar -->
-		<div class="navbar-spacer"></div>
-		<nav class="navbar">
+		<nav id="main-navbar" class="navbar">
+			<div class="navbar-collapsed">
+				<a class="navbar-link" href="#main-navbar">Menu</a>
+			</div>
 			<div class="container">
 
 				<ul class="navbar-list">
-					<li class="navbar-item"><a class="navbar-link" href="#intro">Home</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#intro">About</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#intro">Code</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#intro">Download</a></li>
-					<li class="navbar-item"><a class="navbar-link" href="#intro">Examples</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#components">Components</a>
+					</li>
+					<li class="navbar-item"><a class="navbar-link" href="https://github.com/elenatorro/allineed">Download</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
 				</ul>
 
 			</div>
@@ -32,22 +34,44 @@
 
 
 		<!--  Title -->
+
 		<section class="container u-text-centered">
 			<h1>All I need CSS</h1>
 			<h2>CSS simple and minimalist framework</h2>
 
 			<section class="u-centered">
-				<button type="button" name="button" class="button button-primary">Download</button>
-				<button type="button" name="button" class="button button-warning">Github</button>
-				<button type="button" name="button" class="button button-success">Donate</button>
+				<a type="button" name="button" class="button button-warning" href="https://github.com/elenatorro/allineed">Github</a>
+				<a type="button" name="button" class="button button-success" href="https://paypal.me/elenatorro">Donate</a>
 			</section>
 		</section>
+
 		<!--  / Title -->
 
 	</header>
 
+
 	<section class="container">
 		<section class="container-section">
+			<nav id="components" class="navbar">
+				<div class="container">
+					<ul class="navbar-list">
+						<li class="navbar-item"><a class="navbar-link" href="#grid">Grid</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#navbar">Navbar</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#buttons">Buttons</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#headings">Headings & Typography</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#tables">Tables</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#lists">Lists</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#panels">Panels</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#forms">Forms</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#blockquotes">Blockquotes</a></li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+	</section>
+
+	<section class="container">
+		<section id="grid" class="container-section">
 			<h3>Grid</h3>
 
 			<div class="row">
@@ -140,22 +164,91 @@
 				</div>
 			</div>
 			</div>
-			<!--  / Grid -->
+
+			<!--  Grid Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;one column&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;One&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;eleven columns&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;Eleven&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;two columns&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;Two&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;ten columns&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;Ten&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+		</section>
+
+		<!--  / Grid -->
+
+		<!--  Navbar  -->
+		<section id="navbar" class="container-section">
+			<h3>Navbar</h3>
+
+			<nav class="navbar">
+				<div class="navbar-collapsed">
+					<a class="navbar-link" href="#">Menu</a>
+				</div>
+				<div class="container">
+
+					<ul class="navbar-list">
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 1</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 2</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 3</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#">Link 4</a></li>
+					</ul>
+
+				</div>
+			</nav>
+
+			<!--  Navbar Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;nav class=&quot;navbar&quot;&gt;
+ &lt;div class=&quot;navbar-collapsed&quot;&gt;
+  &lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Menu&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;container&quot;&gt;
+
+  &lt;ul class=&quot;navbar-list&quot;&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+   &lt;li class=&quot;navbar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+			</pre>
+
 		</section>
 
 		<!--  Buttons -->
-		<section class="container-section">
+		<section id="buttons" class="container-section">
 			<h3>Buttons</h3>
 			<button type="button" name="button" class="button">Default</button>
 			<button type="button" name="button" class="button button-primary">Primary</button>
 			<button type="button" name="button" class="button button-success">Success</button>
 			<button type="button" name="button" class="button button-warning">Warning</button>
 			<button type="button" name="button" class="button button-danger">Danger</button>
+
+			<!--  Buttons code-->
+			<h5> > Code</h5>
+			<pre><code>&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;button button-danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
 		</section>
 		<!--  / Buttons -->
 
-		<!--  Typography -->
-		<section class="container-section">
+		<!--  Headings & Typography -->
+		<section id="headings" class="container-section">
 
 			<div class="row">
 
@@ -203,7 +296,8 @@
 
 		<!--  / Typography -->
 
-		<section class="container-section">
+		<!--  Tables -->
+		<section id="tables" class="container-section">
 			<h3>Tables</h3>
 
 			<table class="u-full-width">
@@ -232,7 +326,11 @@
 			</table>
 		</section>
 
-		<section class="container-section">
+		<!--  / Tables -->
+
+		<!--  Lists -->
+
+		<section id="lists" class="container-section">
 			<h3>Lists</h3>
 
 			<div class="row">
@@ -265,13 +363,122 @@
 			</div>
 		</section>
 
-		<section class="container-section">
-			<h3>Form</h3>
+		<!--  / Lists -->
+
+		<!--  Panels -->
+
+		<section id="panels" class="container-section">
+			<h3>Panels</h3>
+
+			<div class="row">
+
+				<div class="six columns">
+					<section class="panel">
+						<header class="panel-header">
+							Panel Header
+						</header>
+						<section class="panel-body">
+							<p>Panel Body</p>
+
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+							animi, id est laborum et dolorum fuga.
+						</section>
+						<footer class="panel-footer">
+							Panel Footer
+						</footer>
+					</section>
+				</div>
+
+				<div class="three columns">
+					<section class="panel panel-primary">
+						<header class="panel-header">
+							Panel Primary
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+				<div class="three columns">
+					<section class="panel panel-success">
+						<header class="panel-header">
+							Panel Success
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="five columns">
+					<section class="panel panel-danger">
+						<header class="panel-header">
+							Panel Danger
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+				<div class="seven columns">
+					<section class="panel panel-warning">
+						<header class="panel-header">
+							Panel Warning
+						</header>
+						<section class="panel-body">
+							Panel Body
+						</section>
+					</section>
+				</div>
+
+			</div>
+
+			<br>
+
+			<!--  Panels Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+
+ &lt;div class=&quot;five columns&quot;&gt;
+  &lt;section class=&quot;panel panel-danger&quot;&gt;
+   &lt;header class=&quot;panel-header&quot;&gt;
+    Panel Danger
+   &lt;/header&gt;
+   &lt;section class=&quot;panel-body&quot;&gt;
+    Panel Body
+   &lt;/section&gt;
+  &lt;/section&gt;
+ &lt;/div&gt;
+
+ &lt;div class=&quot;seven columns&quot;&gt;
+  &lt;section class=&quot;panel panel-warning&quot;&gt;
+   &lt;header class=&quot;panel-header&quot;&gt;
+    Panel Warning
+   &lt;/header&gt;
+   &lt;section class=&quot;panel-body&quot;&gt;
+    Panel Body
+   &lt;/section&gt;
+  &lt;/section&gt;
+ &lt;/div&gt;
+
+&lt;/div&gt;</code><pre>
+		</section>
+
+		<!--  / Panels  -->
+
+		<!--  Forms -->
+		<section id="forms" class="container-section">
+			<h3>Forms</h3>
 
 			<div class="row">
 				<div class="six columns">
 					<form id="form">
-
 
 						<div class="form-control">
 							<label for="emailInput">Email</label>
@@ -288,7 +495,7 @@
 
 						<div class="form-control">
 							<label for="message">Your message</label>
-							<textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="message"></textarea>
+							<textarea class="u-full-width" placeholder="..." id="message"></textarea>
 						</div>
 
 						<div class="form-control">
@@ -309,34 +516,75 @@
 
 						<div class="form-control input-primary">
 							<label for="input-primary">Primary Input</label>
-							<input class="u-full-width input-primary" type="text" placeholder="placeholder" id="input-primary">
-							<sub>Input Info message</sub>
+							<input class="u-full-width input-primary" type="text" placeholder="i.e: primary input" id="input-primary">
+							<sub>Input message primary</sub>
 						</div>
 
 						<div class="form-control input-success">
 							<label for="input-success">Success Input</label>
-							<input class="u-full-width input-success" type="text" placeholder="placeholder" id="input-success">
+							<input class="u-full-width input-success" type="text" placeholder="i.e: success input" id="input-success">
 							<sub>Input message success</sub>
 						</div>
 
 						<div class="form-control input-warning">
 							<label for="input-warning">Warning Input</label>
-							<input class="u-full-width input-warning" type="text" placeholder="placeholder" id="input-warning">
+							<input class="u-full-width input-warning" type="text" placeholder="i.e: warning input" id="input-warning">
 							<sub>Input message warning</sub>
 						</div>
 
 						<div class="form-control input-danger">
 							<label for="danger-input">Danger Input</label>
-							<input class="u-full-width input-danger" type="text" placeholder="placeholder" id="danger-input">
-							<sub>Input message wrong</sub>
+							<input class="u-full-width input-danger" type="text" placeholder="i.e: danger input" id="danger-input">
+							<sub>Input message danger</sub>
 						</div>
 
 					</form>
 				</div>
 			</div>
+
+			<!--  Forms Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;six columns&quot;&gt;
+  &lt;form id=&quot;form&quot;&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;emailInput&quot;&gt;Email&lt;/label&gt;
+    &lt;input class=&quot;u-full-width&quot; type=&quot;email&quot; placeholder=&quot;test@mailbox.com&quot; id=&quot;emailInput&quot;&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;genderInput&quot;&gt;Gender&lt;/label&gt;
+    &lt;select class=&quot;u-full-width&quot; id=&quot;genderInput&quot;&gt;
+     &lt;option value=&quot;Male&quot;&gt;Male&lt;/option&gt;
+     &lt;option value=&quot;Female&quot;&gt;Female&lt;/option&gt;
+    &lt;/select&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;message&quot;&gt;Your message&lt;/label&gt;
+    &lt;textarea class=&quot;u-full-width&quot; placeholder=&quot;Hi Dave &amp;hellip;&quot; id=&quot;message&quot;&gt;&lt;/textarea&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;sendResponse&quot;&gt;
+     &lt;input id=&quot;sendResponse&quot; type=&quot;checkbox&quot;&gt;
+     &lt;span class=&quot;label-body&quot;&gt;Send response&lt;/span&gt;
+    &lt;/label&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;form-control&quot;&gt;
+    &lt;input form=&quot;form&quot; class=&quot;button-primary&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+   &lt;/div&gt;
+  &lt;/form&gt;
+ &lt;/div&gt;</code></pre>
 		</section>
 
-		<section class="container-section">
+		<!--  / Forms -->
+
+		<!--  Blockquotes -->
+
+		<section id="blockquotes" class="container-section">
 			<h3>Blockquotes</h3>
 
 			<div class="row">
@@ -363,12 +611,37 @@
 					</blockquote>
 				</div>
 			</div>
+
+			<!--  Blockquotes Code -->
+			<h5> > Code</h5>
+			<pre><code>&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;twelve columns&quot;&gt;
+
+  &lt;blockquote class=&quot;blockquote&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-primary&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-success&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-warning&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&quot;blockquote blockquote-danger&quot; cite=&quot;http://elenatorro.github.io&quot;&gt;
+   This is a blockquote.
+  &lt;/blockquote&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code><pre>
 		</section>
 
-
+		<!--  / Blockquotes -->
 	</section>
-
-	<hr>
 
 	<footer class="container u-text-centered">
 		<p>Based on <a href="http://getskeleton.com/">Skeleton</a></p>
@@ -376,7 +649,6 @@
 			<span class="u-text-danger">&#x2764;</span> by <a href="http://elenatorro.github.io/">Elena Torró.</a>
 		</p>
 	</footer>
-
 </body>
 
 </html>
