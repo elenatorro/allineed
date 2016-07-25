@@ -6,16 +6,16 @@ $color-darken-background: 10%;
 $color-darken-border: 10%;
 
 
-$colors-base-font-color: #222;
-$colors-base:            #54494B;
-$colors-base-hover:      darken($colors-base, $color-darken-background);
-$colors-base-border:     darken($colors-base, $color-darken-border);
-$colors-white:           #FFFFFF;
+$colors-base-font-color:            #222;
+$colors-base:                       #727B84;
+$colors-base-hover:                 darken($colors-base, $color-darken-background);
+$colors-base-border:                darken($colors-base, $color-darken-border);
+$colors-white:                      #FFFFFF;
 
 // Primary
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$colors-primary-background:         #8FC7E8;
+$colors-primary-background:         #72ADBF;
 $colors-primary-border:             darken($colors-primary-background, $color-darken-border);
 $colors-primary-background-hover:   darken($colors-primary-background, $color-darken-background);
 $colors-primary-border-hover:       darken($colors-primary-background, $color-darken-border);
@@ -26,7 +26,8 @@ $colors-primary:                    $colors-white;
 // Success
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$colors-success-background:         #91C7B1;
+
+$colors-success-background:         #60C18F;
 $colors-success-border:             darken($colors-success-background, $color-darken-border);
 $colors-success-background-hover:   darken($colors-success-background, $color-darken-background);
 $colors-success-border-hover:       darken($colors-success-background, $color-darken-border);
@@ -36,7 +37,7 @@ $colors-success:                    $colors-white;
 // Warning
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$colors-warning-background:         #E2C75A;
+$colors-warning-background:         #B2955B;
 $colors-warning-border:             darken($colors-warning-background, $color-darken-border);
 $colors-warning-background-hover:   darken($colors-warning-background, $color-darken-background);
 $colors-warning-border-hover:       darken($colors-warning-background, $color-darken-border);
@@ -46,7 +47,7 @@ $colors-warning:                    $colors-white;
 // Danger
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$colors-danger-background:         #B33951;
+$colors-danger-background:         #C45C8B;
 $colors-danger-border:             darken($colors-danger-background, $color-darken-border);
 $colors-danger-background-hover:   darken($colors-danger-background, $color-darken-background);
 $colors-danger-border-hover:       darken($colors-danger-background, $color-darken-border);
