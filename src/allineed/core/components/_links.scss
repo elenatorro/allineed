@@ -2,7 +2,7 @@
 // Variables
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$link-color:       $colors-base;
+$link-color:       darken($colors-base, 20%);
 $link-color-hover: $colors-base-hover;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -17,4 +17,5 @@ a:hover {
  background-color: $link-color-hover;
  color: $colors-primary;
  text-decoration: none;
+ cursor: pointer;
 }

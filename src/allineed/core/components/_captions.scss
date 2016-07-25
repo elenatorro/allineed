@@ -2,7 +2,8 @@
 // Variables
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$caption-background-default-color: #dddddd;
+$caption-background-default-color: $base-color;
+$caption-border-radius:            $base-elements-border-radius;
 $caption-padding:                  1em 2em;
 $caption-color:                    $colors-white;
 
@@ -13,7 +14,7 @@ $caption-color:                    $colors-white;
 .caption {
  background: #EEE;
  text-align: center;
- border-radius: 4px;
+ border-radius: $caption-border-radius;
  font-size: 1rem;
  height: 30px;
  line-height: 30px;

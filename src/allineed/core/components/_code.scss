@@ -5,7 +5,7 @@
 $code-background-color:           $colors-white;
 $code-border-radius:              $base-elements-border-radius;
 $code-border:                     1px solid $colors-base-border;
-$code-font-size:                  90%;
+$code-font-size:                  $base-font-size;
 $code-margin:                     0 .2rem;
 $code-padding:                    .2rem .5rem;
 
@@ -19,10 +19,12 @@ code {
   background-color: $code-background-color;
   border-radius:    $code-border-radius;
   border:           $code-border;
+  display:          block;
   font-size:        $code-font-size;
   margin:           $code-margin;
   padding:          $code-padding;
   white-space:      nowrap;
+  overflow: scroll;
 }
 
 pre > code {

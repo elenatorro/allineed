@@ -7,6 +7,7 @@ $form-input-border-radius:     $base-elements-border-radius;
 $form-input-border:            1px solid $colors-base-border;
 $form-input-height:            $base-texts-height;
 $form-input-padding:           6px 10px;
+$form-input-font-size:         $base-font-size;
 
 $form-input-focus-border:      1px solid $colors-base-hover;
 
@@ -21,6 +22,10 @@ $form-label-body-font-weight:  normal;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Fonts
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+input, textarea, select, option {
+ font-size: $form-input-font-size;
+}
 
 input[type="email"],
 input[type="number"],
