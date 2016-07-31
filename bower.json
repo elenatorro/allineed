@@ -6,7 +6,7 @@
     "authors": [
         "Elena Torro <elenatorro@gmail.com>"
     ],
-    "license": "ISC",
+    "license": "MIT",
     "moduleType": [
         "amd",
         "es6",
