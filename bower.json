@@ -1,26 +1,23 @@
 {
-  "name": "allineed",
-  "version": "0.1.0",
-  "description": "All I Need: Simple and minimalist CSS framework",
-  "main": "assets/scss/allineed/allineed.css",
-  "authors": [
-    "Elena Torro <elenatorro@gmail.com>"
-  ],
-  "license": "ISC",
-  "moduleType": [
-    "amd",
-    "es6",
-    "node"
-  ],
-  "homepage": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "prism": "prismjs#^1.5.1"
-  }
+    "name": "allineed",
+    "version": "0.1.0",
+    "description": "All I Need: Simple and minimalist CSS framework",
+    "main": "src/allineed/allineed.css",
+    "authors": [
+        "Elena Torro <elenatorro@gmail.com>"
+    ],
+    "license": "ISC",
+    "moduleType": [
+        "amd",
+        "es6",
+        "node"
+    ],
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
 }
