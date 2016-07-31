@@ -9,6 +9,10 @@ $navbar-border-bottom:               $base-border-style;
 $navbar-link-color:                  $colors-base-border;
 $navbar-background-hover-color:      $colors-base-hover;
 $navbar-link-hover-color:            $colors-white;
+$navbar-link-font-size:              11px;
+$navbar-link-padding:                0 1rem;
+$navbar-link-letter-spacing:         .2rem;
+$navbar-link-font-weight:            600;
 $navbar-background-color:            transparent;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -17,13 +21,10 @@ $navbar-background-color:            transparent;
 
 .navbar,
 .navbar-collapsed {
-  display: block;
-  position: relative;
+  height: $navbar-line-height;
   margin-bottom: $navbar-line-height;
   width: 100%;
-  height: $navbar-line-height;
-  z-index: 99;
-  border-bottom: $navbar-border-bottom;
+  z-index: $base-z-index-1;
 
   > .panel {
    position: absolute;
@@ -40,18 +41,22 @@ $navbar-background-color:            transparent;
 }
 
 .navbar-list {
+  display: table;
   list-style: none;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .navbar-item {
   border-bottom: $navbar-border-bottom;
   cursor: pointer;
-  float: left;
+  display: table-cell;
+  line-height: auto;
   margin-bottom: 0;
-  position: relative;
+  text-align: center;
 
   > div {
+   width: auto;
    display: none;
 
    &:target {
@@ -61,16 +66,16 @@ $navbar-background-color:            transparent;
 }
 
 .navbar-link {
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .2rem;
-  padding: 0 1rem;
-  margin: 0;
-  text-decoration: none;
-  line-height: $navbar-line-height;
   display: block;
+  font-size: $navbar-link-font-size;
+  font-weight: $navbar-link-font-weight;
   height: 100%;
+  letter-spacing: $navbar-link-letter-spacing;
+  line-height: $navbar-line-height;
+  margin: 0;
+  padding: $navbar-link-padding;
+  text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
    background-color: $navbar-background-hover-color;
@@ -91,11 +96,13 @@ $navbar-background-color:            transparent;
  .navbar,
  .navbar-collapsed {
   border: none;
+  display: block;
   height: 100%;
  }
 
  .navbar-item {
   width: 100%;
+  display: block;
   border-bottom: $navbar-border-bottom;
  }
 
