@@ -70,6 +70,11 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest(paths.destFonts));
 })
 
+gulp.task('images', function () {
+  return gulp.src(paths.srcImages)
+    .pipe(gulp.dest(paths.destImages));
+})
+
 gulp.task('sass', function () {
   gulp.src(paths.sourceSCSS)
     .pipe(sass({
@@ -81,6 +86,6 @@ gulp.task('sass', function () {
 })
 
 
-gulp.task('default', ['babel', 'dist', 'browserSync', 'sass', 'fonts', 'watch'])
+gulp.task('default', ['babel', 'dist', 'browserSync', 'sass', 'fonts', 'images', 'watch'])
 
-gulp.task('compile', ['babel', 'dist', 'sass', 'fonts'])
+gulp.task('compile', ['babel', 'dist', 'sass', 'fonts', 'images'])

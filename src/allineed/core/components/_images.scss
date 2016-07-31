@@ -1,0 +1,74 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$image-squared-size:  100%;
+$image-circle-size:   100%;
+
+$image-small-size:    100px;
+$image-medium-size:   150px;
+$image-large-size:    200px;
+
+
+$image-bordered-border: .5em solid white;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Images
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.image {
+ display: inline-block;
+ position: relative;
+}
+
+.image-squared {
+  @extend .image;
+  width: $image-squared-size;
+  height: $image-squared-size;
+}
+
+.image-circle {
+ @extend .image;
+ width: $image-circle-size;
+ height: $image-circle-size;
+ border-radius: 50%;
+}
+
+&.image-small {
+ width: $image-small-size;
+ height: $image-small-size;
+}
+
+&.image-medium {
+ width: $image-medium-size;
+ height: $image-medium-size;
+}
+
+&.image-large {
+ width: $image-large-size;
+ height: $image-large-size;
+}
+
+.image-bordered {
+  border: $image-bordered-border;
+}
+
+.image-bordered-primary {
+ @extend .image-bordered;
+ border-color: $colors-primary-border;
+}
+
+.image-bordered-success {
+ @extend .image-bordered;
+ border-color: $colors-success-border;
+}
+
+.image-bordered-warning {
+ @extend .image-bordered;
+ border-color: $colors-warning-border;
+}
+
+.image-bordered-danger {
+ @extend .image-bordered;
+ border-color: $colors-danger-border;
+}
