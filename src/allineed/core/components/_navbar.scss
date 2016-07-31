@@ -23,7 +23,6 @@ $navbar-background-color:            transparent;
 .navbar-collapsed {
   height: $navbar-line-height;
   margin-bottom: $navbar-line-height;
-  width: 100%;
   z-index: $base-z-index-1;
 
   > .panel {
@@ -55,6 +54,17 @@ $navbar-background-color:            transparent;
   margin-bottom: 0;
   text-align: center;
 
+  &:hover {
+   background-color: $navbar-background-hover-color;
+   color: $navbar-link-hover-color;
+
+   > .navbar-link {
+    background-color: $navbar-background-hover-color;
+    color: $navbar-link-hover-color;
+   }
+   
+  }
+
   > div {
    width: auto;
    display: none;
@@ -66,7 +76,7 @@ $navbar-background-color:            transparent;
 }
 
 .navbar-link {
-  display: block;
+  display: inline-block;
   font-size: $navbar-link-font-size;
   font-weight: $navbar-link-font-weight;
   height: 100%;
@@ -76,6 +86,7 @@ $navbar-background-color:            transparent;
   padding: $navbar-link-padding;
   text-decoration: none;
   text-transform: uppercase;
+  width: auto;
 
   &:hover {
    background-color: $navbar-background-hover-color;
