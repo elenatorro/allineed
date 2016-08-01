@@ -15,7 +15,7 @@ const paths = {
     sourceHTML: 'index.html',
     sourceJS: './src/**/*.js',
     sourceSCSS: './src/allineed/allineed.scss',
-    watchSCSS: ['./src/allineed/core/*.scss', './src/allineed/core/components/*.scss'],
+    watchSCSS: ['./src/allineed/core/*.scss', './src/allineed/core/components/*.scss', './src/allineed/modules/**/*.scss'],
     srcImages: './src/images/**',
     srcFonts: './src/fonts/**/*',
     dest: './',
