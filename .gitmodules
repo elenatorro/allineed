@@ -1,0 +1,3 @@
+[submodule "src/allineed/modules/allineed-sidebar"]
+	path = src/allineed/modules/allineed-sidebar
+	url = git@github.com:elenatorro/allineed-sidebar.git
