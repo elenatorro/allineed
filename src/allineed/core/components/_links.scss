@@ -2,8 +2,8 @@
 // Variables
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$link-color:       darken($colors-base, 20%);
-$link-color-hover: $colors-base-hover;
+$link-color:       darken($colors-base, 30%);
+$link-color-hover: darken($colors-base, 21%);
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Link
@@ -11,11 +11,16 @@ $link-color-hover: $colors-base-hover;
 
 a, a:active, a:visited {
   color: $link-color;
+  padding: 1px;
 }
 
 a:hover {
- background-color: $link-color-hover;
- color: $colors-primary;
+ color: $link-color-hover;
+ text-decoration: none;
+ cursor: pointer;
+}
+
+a.button-link {
  text-decoration: none;
  cursor: pointer;
 }

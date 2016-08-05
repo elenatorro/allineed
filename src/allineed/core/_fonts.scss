@@ -24,6 +24,8 @@ $font-family-raleway-bold:      'Raleway Bold';
 $font-family-raleway-italic:    'Raleway Italic';
 $font-family-raleway-light:     'Raleway Light';
 
+$font-family-icomoon-icons:     'Icomoon';
+
 // Arvo
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -122,4 +124,14 @@ $font-family-raleway-light:     'Raleway Light';
 @font-face {
  font-family: 'Raleway Light';
  src: url(../fonts/Raleway/Raleway-Light.ttf);
+}
+
+// Icons
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@font-face {
+ font-family: $font-family-icomoon-icons;
+ src: url(../fonts/Icomoon/IcoMoon.ttf) format('truetype');
+ font-weight: normal;
+ font-style: normal;
 }
