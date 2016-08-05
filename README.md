@@ -30,6 +30,18 @@ You can also change all the main variables you want to, this is just a boilerpla
 
 ---
 
+## Modules
+
+---
+
+You can use only the modules you want.
+
+Modules list:
+
+* [Collapse Sidebar](https://github.com/elenatorro/allineed-sidebar)
+
+---
+
 * Demo & samples: [elenatorro.github.io/allineed](https://elenatorro.github.io/allineed)
 
 ---
