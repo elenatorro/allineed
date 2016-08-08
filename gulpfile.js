@@ -56,15 +56,6 @@ gulp.task('clean', function () {
     .pipe(vinyl(del))
 })
 
-gulp.task('babel', function () {
-  return gulp.src(paths.sourceJS)
-    .pipe(babel({
-      presets: PRESETS
-    }))
-    .pipe(gulp.dest(paths.dest))
-    .pipe(browserSync.reload({ stream: BABEL_STEAM }))
-})
-
 gulp.task('fonts', function () {
   return gulp.src(paths.srcFonts)
     .pipe(gulp.dest(paths.destFonts));
@@ -86,6 +77,6 @@ gulp.task('sass', function () {
 })
 
 
-gulp.task('default', ['babel', 'dist', 'browserSync', 'sass', 'fonts', 'images', 'watch'])
+gulp.task('default', ['dist', 'browserSync', 'sass', 'fonts', 'images', 'watch'])
 
-gulp.task('compile', ['babel', 'dist', 'sass', 'fonts', 'images'])
+gulp.task('compile', ['dist', 'sass', 'fonts', 'images'])
