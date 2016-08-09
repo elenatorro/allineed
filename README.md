@@ -16,6 +16,55 @@ $ bower install --save allineed
 ---
 ### Customize
 
+Create your own `main.scss` file with the following structure, to import the modules you need and overwrite the ones you want to modify:
+
+```
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// This is an example of your main style file
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//
+// Import the files you will need from your bower_components directory
+//
+// @import 'your/path/to/bower_components/allineed/src/allineed/allineed.scss';
+//
+// overwride the following lines
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Core
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@import 'allineed/core/fonts';
+@import 'allineed/core/variables';
+@import 'allineed/core/base';
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Components
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@import 'allineed/core/components/blockquotes';
+@import 'allineed/core/components/buttons';
+@import 'allineed/core/components/captions';
+@import 'allineed/core/components/code';
+@import 'allineed/core/components/forms';
+@import 'allineed/core/components/grid';
+@import 'allineed/core/components/icons';
+@import 'allineed/core/components/images';
+@import 'allineed/core/components/links';
+@import 'allineed/core/components/lists';
+@import 'allineed/core/components/navbar';
+@import 'allineed/core/components/panels';
+@import 'allineed/core/components/tables';
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Modules
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Add additional modules here
+// @import 'allineed/modules/allineed-sidebar/sidebar.scss';
+
+```
+
 * Colors: `bower_components/allineed/src/allineed/core/_variables.scss`
 
 Change the following variables with the main colors of your choice:
