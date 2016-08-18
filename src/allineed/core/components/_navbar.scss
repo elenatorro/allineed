@@ -1,6 +1,6 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 $navbar-line-height:                 3rem;
 $navbar-line-height-phablet:         5rem;
@@ -15,9 +15,9 @@ $navbar-link-letter-spacing:         .2rem;
 $navbar-link-font-weight:            600;
 $navbar-background-color:            transparent;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Navbar
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 .navbar,
 .navbar-collapsed {
@@ -62,7 +62,7 @@ $navbar-background-color:            transparent;
     background-color: $navbar-background-hover-color;
     color: $navbar-link-hover-color;
    }
-   
+
   }
 
   > div {
@@ -98,9 +98,9 @@ $navbar-background-color:            transparent;
   color: $navbar-link-color;
 }
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Media Queries
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 @media (max-width: $base-media-phablet-max) {
 

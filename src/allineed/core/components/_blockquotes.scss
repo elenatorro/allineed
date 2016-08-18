@@ -1,6 +1,5 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $blockquote-border-left:           $base-border-style;
 $blockquote-border-size:           5px;
@@ -8,26 +7,24 @@ $blockquote-font-style:            italic;
 $blockquote-margin:                $base-margin-size 0;
 $blockquote-padding:               $base-padding-size $base-padding-size * 2;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Mixins
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @mixin blockquote-colors($color) {
- background-color: rgba($color, 0.1);
  border-color: $color;
+ background-color: rgba($color, 0.1);
  color: $color;
 }
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Blockquotes
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .blockquote {
- border-left: $blockquote-border-left;
- border-width: $blockquote-border-size;
- font-style: $blockquote-font-style;
  margin: $blockquote-margin;
  padding: $blockquote-padding;
+ border-width: $blockquote-border-size;
+ border-left: $blockquote-border-left;
+ font-style: $blockquote-font-style;
 
  &.blockquote-primary {
   @include blockquote-colors($colors-primary-background);

@@ -1,6 +1,6 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 $button-border-radius:                   $base-elements-border-radius;
 $button-border:                          1px solid $colors-base;
@@ -15,94 +15,90 @@ $button-letter-spacing:                  .1rem;
 $button-padding:                         0 $base-padding-size;
 $button-margin:                          $base-margin-size 0;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Buttons
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background-color:    transparent;
-  border-radius:       $button-border-radius;
-  border:              $button-border;
-  box-sizing:          border-box;
-  color:               $button-color;
-  cursor:              pointer;
   display:             inline-block;
-
-  font-size:           $button-font-size;
-  font-weight:         $button-font-weight;
-  height:              $button-height;
-  letter-spacing:      $button-letter-spacing;
-  line-height:         $button-height;
+  box-sizing:          border-box;
   margin:              $button-margin;
   padding:             $button-padding;
-
+  height:              $button-height;
+  border:              $button-border;
+  border-radius:       $button-border-radius;
+  background-color:    transparent;
+  color:               $button-color;
   text-align:          center;
   text-decoration:     none;
   text-transform:      uppercase;
   white-space:         nowrap;
+  letter-spacing:      $button-letter-spacing;
+  font-weight:         $button-font-weight;
+  font-size:           $button-font-size;
+  line-height:         $button-height;
+  cursor:              pointer;
 
   &:hover, &:focus {
-   color:        $button-hover-color;
-   border-color: $button-hover-border;
    outline:      0;
+   border-color: $button-hover-border;
+   color:        $button-hover-color;
   }
 
   &.button-primary {
-   color:            $colors-primary;
-   background-color: $colors-primary-background;
    border-color:     $colors-primary-border;
+   background-color: $colors-primary-background;
+   color:            $colors-primary;
 
    &:hover, &:focus {
-    color:            $colors-primary-hover;
-    background-color: $colors-primary-background-hover;
     border-color:     $colors-primary-border-hover;
+    background-color: $colors-primary-background-hover;
+    color:            $colors-primary-hover;
    }
   }
 
   &.button-success {
-   color:            $colors-success;
-   background-color: $colors-success-background;
    border-color:     $colors-success-border;
+   background-color: $colors-success-background;
+   color:            $colors-success;
 
    &:hover, &:focus {
-    color:            $colors-success-hover;
-    background-color: $colors-success-background-hover;
     border-color:     $colors-success-border-hover;
+    background-color: $colors-success-background-hover;
+    color:            $colors-success-hover;
    }
   }
 
   &.button-warning {
-   color:            $colors-warning;
-   background-color: $colors-warning-background;
    border-color:     $colors-warning-border;
+   background-color: $colors-warning-background;
+   color:            $colors-warning;
 
    &:hover, &:focus {
-    color:            $colors-warning-hover;
-    background-color: $colors-warning-background-hover;
     border-color:     $colors-warning-border-hover;
+    background-color: $colors-warning-background-hover;
+    color:            $colors-warning-hover;
    }
   }
 
   &.button-danger {
-   color:            $colors-danger;
-   background-color: $colors-danger-background;
    border-color:     $colors-danger-border;
+   background-color: $colors-danger-background;
+   color:            $colors-danger;
 
    &:hover, &:focus {
-    color:            $colors-danger-hover;
-    background-color: $colors-danger-background-hover;
     border-color:     $colors-danger-border-hover;
+    background-color: $colors-danger-background-hover;
+    color:            $colors-danger-hover;
    }
   }
 }
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Media Queries
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @media (max-width: $base-media-phablet-max) {
  .button,

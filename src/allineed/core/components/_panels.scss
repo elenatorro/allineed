@@ -1,15 +1,15 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 $panel-border-radius:              $base-elements-border-radius;
 $panel-border:                     1px solid $colors-base-border;
 $panel-padding:                    $base-padding-size;
 $panel-margin:                     $base-margin-size * 2;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Mixins
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 @mixin panel-part() {
  margin: 0;
@@ -34,20 +34,21 @@ $panel-margin:                     $base-margin-size * 2;
  }
 }
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Panels
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 .panel {
  display: block;
+ margin-bottom: $panel-margin;
  width: 100%;
  border: $panel-border;
  border-radius: $panel-border-radius;
- margin-bottom: $panel-margin;
 
  .panel-header {
-  @include panel-part();
   border-bottom: $panel-border;
+
+  @include panel-part();
  }
 
  .panel-body {
@@ -55,8 +56,9 @@ $panel-margin:                     $base-margin-size * 2;
  }
 
  .panel-footer {
-  @include panel-part();
   border-top: $panel-border;
+
+  @include panel-part();
  }
 
  &.panel-primary {

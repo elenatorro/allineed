@@ -1,26 +1,26 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 $caption-background-default-color: $base-color;
 $caption-border-radius:            $base-elements-border-radius;
 $caption-padding:                  1em 2em;
 $caption-color:                    $colors-white;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Captions
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 .caption {
+ margin-bottom: .75rem;
+ height: 30px;
+ border-radius: $caption-border-radius;
  background: #EEE;
  text-align: center;
- border-radius: $caption-border-radius;
- font-size: 1rem;
- height: 30px;
- line-height: 30px;
- margin-bottom: .75rem;
- font-weight: 600;
  letter-spacing: .1rem;
+ font-weight: 600;
+ font-size: 1rem;
+ line-height: 30px;
 
  &.caption-primary {
   background-color: $colors-primary-background;

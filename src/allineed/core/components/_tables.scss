@@ -1,21 +1,21 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 $table-row-padding:       12px 15px;
 $table-row-padding-left:  0;
 $table-row-padding-right: 0;
 $table-row-border:        1px solid $colors-base-border;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Tables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 th,
 td {
   padding:       $table-row-padding;
-  text-align:    left;
   border-bottom: $table-row-border;
+  text-align:    left;
 }
 
 th:first-child,

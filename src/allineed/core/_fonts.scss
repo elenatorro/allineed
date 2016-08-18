@@ -1,7 +1,3 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 $font-family-arvo:              'Arvo';
 $font-family-arvo-bold:         'Arvo Bold';
 $font-family-arvo-italic:       'Arvo Italic';
@@ -27,16 +23,15 @@ $font-family-raleway-light:     'Raleway Light';
 $font-family-icomoon-icons:     'Icomoon';
 
 // Arvo
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @font-face {
- font-family: 'Arvo';
- src: url(../fonts/Arvo/Arvo-Regular.ttf);
+  font-family: 'Arvo';
+  src: url(../fonts/Arvo/Arvo-Regular.ttf);
 }
 
 @font-face {
- font-family: 'Arvo Bold';
- src: url(../fonts/Arvo/Arvo-Bold.ttf);
+  font-family: 'Arvo Bold';
+  src: url(../fonts/Arvo/Arvo-Bold.ttf);
 }
 
 @font-face {
@@ -45,93 +40,88 @@ $font-family-icomoon-icons:     'Icomoon';
 }
 
 // Droid Sans
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @font-face {
- font-family: 'Droid Sans';
- src: url(../fonts/Droid_Sans/DroidSans.ttf);
+  font-family: 'Droid Sans';
+  src: url(../fonts/Droid_Sans/DroidSans.ttf);
 }
 
 @font-face {
- font-family: 'Droid Sans';
+  font-family: 'Droid Sans';
  src: url(../fonts/Droid_Sans/DroidSans-Bold.ttf);
 }
 
 // Lato
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @font-face {
- font-family: 'Lato';
- src: url(../fonts/Lato/Lato-Regular.ttf);
+  font-family: 'Lato';
+  src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 
 @font-face {
- font-family: 'Lato Bold';
+  font-family: 'Lato Bold';
  src: url(../fonts/Lato/Lato-Bold.ttf);
 }
 
 @font-face {
- font-family: 'Lato Italic';
+  font-family: 'Lato Italic';
  src: url(../fonts/Lato/Lato-Italic.ttf);
 }
 
 @font-face {
- font-family: 'Lato Light';
+  font-family: 'Lato Light';
  src: url(../fonts/Lato/Lato-Light.ttf);
 }
 
 // Open Sans
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @font-face {
- font-family: 'Open Sans';
- src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 }
 
 @font-face {
- font-family: 'Open Sans Bold';
+  font-family: 'Open Sans Bold';
  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
 }
 
 @font-face {
- font-family: 'Open Sans Italic';
+  font-family: 'Open Sans Italic';
  src: url(../fonts/Open_Sans/OpenSans-Italic.ttf);
 }
 
 @font-face {
- font-family: 'Open Sans Light';
+  font-family: 'Open Sans Light';
  src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
 }
 
 // Raleway
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @font-face {
- font-family: 'Raleway';
- src: url(../fonts/Raleway/Raleway-Regular.ttf);
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway/Raleway-Regular.ttf);
 }
 
 @font-face {
- font-family: 'Raleway Bold';
- src: url(../fonts/Raleway/Raleway-Bold.ttf);
+  font-family: 'Raleway Bold';
+  src: url(../fonts/Raleway/Raleway-Bold.ttf);
 }
 
 @font-face {
- font-family: 'Raleway Italic';
- src: url(../fonts/Raleway/Raleway-Italic.ttf);
+  font-family: 'Raleway Italic';
+  src: url(../fonts/Raleway/Raleway-Italic.ttf);
 }
 
 @font-face {
- font-family: 'Raleway Light';
- src: url(../fonts/Raleway/Raleway-Light.ttf);
+  font-family: 'Raleway Light';
+  src: url(../fonts/Raleway/Raleway-Light.ttf);
 }
 
 // Icons
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @font-face {
- font-family: $font-family-icomoon-icons;
- src: url(../fonts/Icomoon/IcoMoon.ttf) format('truetype');
- font-weight: normal;
- font-style: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-family: $font-family-icomoon-icons;
+  src: url(../fonts/Icomoon/IcoMoon.ttf) format('truetype');
 }

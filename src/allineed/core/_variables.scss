@@ -1,6 +1,5 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Colors
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $color-darken-background: 10%;
 $color-darken-border: 10%;
@@ -13,7 +12,6 @@ $colors-base-border:                darken($colors-base, $color-darken-border);
 $colors-white:                      #FFFFFF;
 
 // Primary
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $colors-primary-background:         #72ADBF;
 $colors-primary-border:             darken($colors-primary-background, $color-darken-border);
@@ -24,8 +22,6 @@ $colors-primary:                    $colors-white;
 
 
 // Success
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 $colors-success-background:         #60C18F;
 $colors-success-border:             darken($colors-success-background, $color-darken-border);
@@ -35,7 +31,6 @@ $colors-success-hover:              $colors-white;
 $colors-success:                    $colors-white;
 
 // Warning
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $colors-warning-background:         #B2955B;
 $colors-warning-border:             darken($colors-warning-background, $color-darken-border);
@@ -45,7 +40,6 @@ $colors-warning-hover:              $colors-white;
 $colors-warning:                    $colors-white;
 
 // Danger
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $colors-danger-background:         #C45C8B;
 $colors-danger-border:             darken($colors-danger-background, $color-darken-border);
@@ -54,36 +48,30 @@ $colors-danger-border-hover:       darken($colors-danger-background, $color-dark
 $colors-danger-hover:              $colors-white;
 $colors-danger:                    $colors-white;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Fonts
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $base-font-family:                 $font-family-open-sans;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Lines
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $base-border-style:               1px solid $colors-base-border;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Spaces
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $base-padding-size:              1rem;
 $base-margin-size:               1rem;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Media Queries
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $base-media-phablet-max:           750px;
 $base-media-phablet-min:           650px;
 $base-media-phone-min:             400px;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Z Index
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $base-z-index:                    0;
 $base-z-index-1:                  1000;

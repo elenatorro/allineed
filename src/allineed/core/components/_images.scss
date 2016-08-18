@@ -1,6 +1,6 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 $image-squared-size:  100%;
 $image-circle-size:   100%;
@@ -12,26 +12,28 @@ $image-large-size:    200px;
 
 $image-bordered-border: .5em solid white;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Images
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 .image {
- display: inline-block;
  position: relative;
+ display: inline-block;
 }
 
 .image-squared {
-  @extend .image;
   width: $image-squared-size;
   height: $image-squared-size;
+
+  @extend .image;
 }
 
 .image-circle {
- @extend .image;
  width: $image-circle-size;
  height: $image-circle-size;
  border-radius: 50%;
+
+ @extend .image;
 }
 
 &.image-small {
@@ -54,21 +56,25 @@ $image-bordered-border: .5em solid white;
 }
 
 .image-bordered-primary {
- @extend .image-bordered;
  border-color: $colors-primary-border;
+
+ @extend .image-bordered;
 }
 
 .image-bordered-success {
- @extend .image-bordered;
  border-color: $colors-success-border;
+
+ @extend .image-bordered;
 }
 
 .image-bordered-warning {
- @extend .image-bordered;
  border-color: $colors-warning-border;
+
+ @extend .image-bordered;
 }
 
 .image-bordered-danger {
- @extend .image-bordered;
  border-color: $colors-danger-border;
+
+ @extend .image-bordered;
 }
