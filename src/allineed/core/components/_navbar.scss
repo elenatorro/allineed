@@ -1,133 +1,125 @@
 
 // Variables
 
+$navbar-line-height: 3rem;
+$navbar-line-height-phablet: 5rem;
+$navbar-border-bottom: $base-border-style;
 
-$navbar-line-height:                 3rem;
-$navbar-line-height-phablet:         5rem;
-$navbar-border-bottom:               $base-border-style;
-
-$navbar-link-color:                  $colors-base-border;
-$navbar-background-hover-color:      $colors-base-hover;
-$navbar-link-hover-color:            $colors-white;
-$navbar-link-font-size:              11px;
-$navbar-link-padding:                0 1rem;
-$navbar-link-letter-spacing:         .2rem;
-$navbar-link-font-weight:            600;
-$navbar-background-color:            transparent;
-
+$navbar-link-color: $colors-base-border;
+$navbar-background-hover-color: $colors-base-hover;
+$navbar-link-hover-color: $colors-white;
+$navbar-link-font-size: 11px;
+$navbar-link-padding: 0 1rem;
+$navbar-link-letter-spacing: 0.2rem;
+$navbar-link-font-weight: 600;
+$navbar-background-color: transparent;
 
 // Navbar
 
+.ain-navbar,
+.ain-navbar-collapsed {
+    z-index: $base-z-index-1;
+    margin-bottom: $navbar-line-height;
+    height: $navbar-line-height;
 
-.navbar,
-.navbar-collapsed {
-  height: $navbar-line-height;
-  margin-bottom: $navbar-line-height;
-  z-index: $base-z-index-1;
-
-  > .panel {
-   position: absolute;
-  }
+    > .ain-panel {
+        position: absolute;
+    }
 }
 
-.navbar-collapsed {
-  display: none;
-  margin-bottom: 0;
+.ain-navbar-collapsed {
+    display: none;
+    margin-bottom: 0;
 }
 
-.navbar > .container {
-  width: 100%;
+.ain-navbar > .container {
+    width: 100%;
 }
 
-.navbar-list {
-  display: table;
-  list-style: none;
-  margin-bottom: 0;
-  width: 100%;
+.ain-navbar-list {
+    display: table;
+    margin-bottom: 0;
+    width: 100%;
+    list-style: none;
 }
 
-.navbar-item {
-  border-bottom: $navbar-border-bottom;
-  cursor: pointer;
-  display: table-cell;
-  line-height: auto;
-  margin-bottom: 0;
-  text-align: center;
+.ain-navbar-item {
+    display: table-cell;
+    margin-bottom: 0;
+    border-bottom: $navbar-border-bottom;
+    text-align: center;
+    line-height: auto;
+    cursor: pointer;
 
-  &:hover {
-   background-color: $navbar-background-hover-color;
-   color: $navbar-link-hover-color;
+    &:hover {
+        background-color: $navbar-background-hover-color;
+        color: $navbar-link-hover-color;
 
-   > .navbar-link {
-    background-color: $navbar-background-hover-color;
-    color: $navbar-link-hover-color;
-   }
+        > .ain-navbar-link {
+            background-color: $navbar-background-hover-color;
+            color: $navbar-link-hover-color;
+        }
+    }
 
-  }
+    > div {
+        display: none;
+        width: auto;
 
-  > div {
-   width: auto;
-   display: none;
-
-   &:target {
-    display: block;
-   }
-  }
+        &:target {
+            display: block;
+        }
+    }
 }
 
-.navbar-link {
-  display: inline-block;
-  font-size: $navbar-link-font-size;
-  font-weight: $navbar-link-font-weight;
-  height: 100%;
-  letter-spacing: $navbar-link-letter-spacing;
-  line-height: $navbar-line-height;
-  margin: 0;
-  padding: $navbar-link-padding;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: auto;
+.ain-navbar-link {
+    display: inline-block;
+    margin: 0;
+    padding: $navbar-link-padding;
+    width: auto;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: $navbar-link-letter-spacing;
+    font-weight: $navbar-link-font-weight;
+    font-size: $navbar-link-font-size;
+    line-height: $navbar-line-height;
 
-  &:hover {
-   background-color: $navbar-background-hover-color;
-   color: $navbar-link-hover-color;
-  }
+    &:hover {
+        background-color: $navbar-background-hover-color;
+        color: $navbar-link-hover-color;
+    }
 }
 
-.navbar-link.active {
-  color: $navbar-link-color;
+.ain-navbar-link.active {
+    color: $navbar-link-color;
 }
-
 
 // Media Queries
-
-
 @media (max-width: $base-media-phablet-max) {
+    .ain-navbar,
+    .ain-navbar-collapsed {
+        display: block;
+        height: 100%;
+        border: none;
+    }
 
- .navbar,
- .navbar-collapsed {
-  border: none;
-  display: block;
-  height: 100%;
- }
+    .ain-navbar-item {
+        display: block;
+        width: 100%;
+        border-bottom: $navbar-border-bottom;
+    }
 
- .navbar-item {
-  width: 100%;
-  display: block;
-  border-bottom: $navbar-border-bottom;
- }
+    #main-navbar:not(:target) {
+        .ain-navbar-item {
+            display: none;
+        }
 
- #main-navbar:not(:target) {
-   .navbar-item {
-     display: none;
-   }
+        .ain-navbar-collapsed {
+            display: block;
+        }
+    }
 
-   .navbar-collapsed {
-     display: block;
-   }
-  }
-
-  #main-navbar:target {
-     display: block;
-  }
+    #main-navbar:target {
+        display: block;
+    }
 }

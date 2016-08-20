@@ -1,45 +1,50 @@
 
 // Variables
 
-$blockquote-border-left:           $base-border-style;
-$blockquote-border-size:           5px;
-$blockquote-font-style:            italic;
-$blockquote-margin:                $base-margin-size 0;
-$blockquote-padding:               $base-padding-size $base-padding-size * 2;
-
+$blockquote-border-left: $base-border-style;
+$blockquote-border-size: 5px;
+$blockquote-font-style: italic;
+$blockquote-margin: $base-margin-size 0;
+$blockquote-padding: $base-padding-size $base-padding-size * 2;
 
 // Mixins
+@mixin blockquote() {
+    margin: $blockquote-margin;
+    padding: $blockquote-padding;
 
-@mixin blockquote-colors($color) {
- border-color: $color;
- background-color: rgba($color, 0.1);
- color: $color;
+    border-width: $blockquote-border-size;
+    border-left: $blockquote-border-left;
+
+    font-style: $blockquote-font-style;
 }
-
+@mixin blockquote-colors($color) {
+    border-color: $color;
+    background-color: rgba($color, 0.1);
+    color: $color;
+}
 
 // Blockquotes
 
-.blockquote {
- margin: $blockquote-margin;
- padding: $blockquote-padding;
- border-width: $blockquote-border-size;
- border-left: $blockquote-border-left;
- font-style: $blockquote-font-style;
+.ain-blockquote {
+    @include blockquote();
+}
 
- &.blockquote-primary {
-  @include blockquote-colors($colors-primary-background);
- }
+.ain-blockquote-primary {
+    @include blockquote();
+    @include blockquote-colors($colors-primary-background);
+}
 
- &.blockquote-success {
-  @include blockquote-colors($colors-success-background);
- }
+.ain-blockquote-success {
+    @include blockquote();
+    @include blockquote-colors($colors-success-background);
+}
 
- &.blockquote-warning {
-  @include blockquote-colors($colors-warning-background);
- }
+.ain-blockquote-warning {
+    @include blockquote();
+    @include blockquote-colors($colors-warning-background);
+}
 
- &.blockquote-danger {
-  @include blockquote-colors($colors-danger-background);
- }
-
+.ain-blockquote-danger {
+    @include blockquote();
+    @include blockquote-colors($colors-danger-background);
 }

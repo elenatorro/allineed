@@ -1,42 +1,40 @@
 
 // Variables
 
+$list-margin-top: 0;
+$list-padding-left: 0;
+$list-item-margin-bottom: 1rem;
 
-$list-margin-top:              0;
-$list-padding-left:            0;
-$list-item-margin-bottom:      1rem;
+$list-ordered-style: decimal inside;
+$list-unordered-style: circle inside;
 
-$list-ordered-style:           decimal inside;
-$list-unordered-style:         circle inside;
-
-$list-inner-margin:            1.5rem 0 1.5rem 3rem;
-$list-inner-font-size:         90%;
-
+$list-inner-margin: 1.5rem 0 1.5rem 3rem;
+$list-inner-font-size: 90%;
 
 // Lists
 
-
 ol {
-  list-style: $list-ordered-style;
+    list-style: $list-ordered-style;
 }
 
 ul {
-  list-style: $list-unordered-style;
+    list-style: $list-unordered-style;
 }
 
-ol, ul {
-  padding-left: $list-padding-left;
-  margin-top:   $list-margin-top;
+ol,
+ul {
+    margin-top: $list-margin-top;
+    padding-left: $list-padding-left;
 }
 
-ul ul,
-ul ol,
 ol ol,
-ol ul {
-  margin:    $list-inner-margin;
-  font-size: $list-inner-font-size;
+ol ul,
+ul ol,
+ul ul {
+    margin: $list-inner-margin;
+    font-size: $list-inner-font-size;
 }
 
 li {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }

@@ -5,25 +5,26 @@
 $table-row-padding:       12px 15px;
 $table-row-padding-left:  0;
 $table-row-padding-right: 0;
-$table-row-border:        1px solid $colors-base-border;
+$table-row-border:        $base-border-style;
 
 
 // Tables
 
+.ain-table {
+  th,
+  td {
+    padding:       $table-row-padding;
+    border-bottom: $table-row-border;
+    text-align:    left;
+  }
 
-th,
-td {
-  padding:       $table-row-padding;
-  border-bottom: $table-row-border;
-  text-align:    left;
-}
+  th:first-child,
+  td:first-child {
+    padding-left: $table-row-padding-left;
+  }
 
-th:first-child,
-td:first-child {
-  padding-left: $table-row-padding-left;
-}
-
-th:last-child,
-td:last-child {
-  padding-right: $table-row-padding-right;
+  th:last-child,
+  td:last-child {
+    padding-right: $table-row-padding-right;
+  }
 }

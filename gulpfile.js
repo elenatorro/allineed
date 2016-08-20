@@ -29,6 +29,18 @@ const paths = {
   CLEAN_READ = false,
   BABEL_STEAM = true;
 
+var modules = [
+  {
+    name: 'allineed-panel-info',
+    sourceSCSS: './src/allineed/modules/allineed-panel-info/ain-panel-info.scss',
+    destCSS: './src/allineed/modules/allineed-panel-info/'
+  },{
+    name: 'allineed-sidebar',
+    sourceSCSS: './src/allineed/modules/allineed-sidebar/ain-sidebar.scss',
+    destCSS: './src/allineed/modules/allineed-sidebar/'
+  }
+]
+
 gulp.task('browserSync', function () {
   browserSync({
     server: {
@@ -76,7 +88,18 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(paths.destCSS))
 })
 
+gulp.task('sass-modules', function () {
+  modules.forEach(function (module) {
+    gulp.src(module.sourceSCSS)
+      .pipe(sass({
+        outputStyle: OUTPUT_STYLE
+      }))
+      .pipe(gulp.dest(module.destCSS))
+      .pipe(minifycss())
+      .pipe(gulp.dest(module.destCSS))
+  })
+})
 
-gulp.task('default', ['dist', 'browserSync', 'sass', 'fonts', 'images', 'watch'])
 
-gulp.task('compile', ['dist', 'sass', 'fonts', 'images'])
+gulp.task('default', ['dist', 'browserSync', 'sass', 'sass-modules', 'fonts', 'images', 'watch'])
+gulp.task('compile', ['dist', 'sass', 'sass-modules', 'fonts', 'images'])

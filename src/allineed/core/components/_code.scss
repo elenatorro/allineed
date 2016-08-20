@@ -1,34 +1,39 @@
 
 // Variables
 
+$code-background-color: $colors-white;
+$code-border-radius: $base-elements-border-radius;
+$code-border: 1px solid $colors-base-border;
+$code-font-size: $base-font-size;
+$code-margin: 0 0.2rem;
+$code-padding: 0.2rem 0.5rem;
 
-$code-background-color:           $colors-white;
-$code-border-radius:              $base-elements-border-radius;
-$code-border:                     1px solid $colors-base-border;
-$code-font-size:                  $base-font-size;
-$code-margin:                     0 .2rem;
-$code-padding:                    .2rem .5rem;
+$pre-code-padding: 1rem 1.5rem;
 
-$pre-code-padding:                1rem 1.5rem;
+// Mixins
+@mixin code() {
+    display: block;
+    overflow: scroll;
 
+    margin: $code-margin;
+    padding: $code-padding;
+
+    background-color: $code-background-color;
+    border: $code-border;
+    border-radius: $code-border-radius;
+
+    font-size: $code-font-size;
+    white-space: nowrap;
+}
 
 // Code
 
-
-code {
-  display: block;
-  overflow: scroll;
-  margin: $code-margin;
-  padding: $code-padding;
-  border: $code-border;
-  border-radius: $code-border-radius;
-  background-color: $code-background-color;
-  white-space: nowrap;
-  font-size: $code-font-size;
+code.ain-code {
+    @include code();
 }
 
-pre > code {
-  display: block;
-  padding: $pre-code-padding;
-  white-space: pre;
+pre > .ain-code {
+    display: block;
+    padding: $pre-code-padding;
+    white-space: pre;
 }

@@ -1,80 +1,84 @@
 
 // Variables
 
+$image-squared-size: 100%;
+$image-circle-size: 100%;
 
-$image-squared-size:  100%;
-$image-circle-size:   100%;
+$image-small-size: 100px;
+$image-medium-size: 150px;
+$image-large-size: 200px;
 
-$image-small-size:    100px;
-$image-medium-size:   150px;
-$image-large-size:    200px;
+$image-bordered-border: 0.5em solid white;
 
+// Mixins
+@mixin image() {
+    position: relative;
+    display: inline-block;
+}
 
-$image-bordered-border: .5em solid white;
-
+@mixin image-bordered() {
+    @include image();
+    border: $image-bordered-border;
+}
 
 // Images
 
-
-.image {
- position: relative;
- display: inline-block;
+.ain-image {
+    @include image();
 }
 
-.image-squared {
-  width: $image-squared-size;
-  height: $image-squared-size;
-
-  @extend .image;
+.ain-image-squared {
+    @include image();
+    width: $image-squared-size;
+    height: $image-squared-size;
 }
 
-.image-circle {
- width: $image-circle-size;
- height: $image-circle-size;
- border-radius: 50%;
-
- @extend .image;
+.ain-image-circle {
+    @include image();
+    width: $image-circle-size;
+    height: $image-circle-size;
+    border-radius: 50%;
 }
 
-&.image-small {
- width: $image-small-size;
- height: $image-small-size;
+.ain-image-small {
+    @include image();
+    width: $image-small-size;
+    height: $image-small-size;
 }
 
-&.image-medium {
- width: $image-medium-size;
- height: $image-medium-size;
+.ain-image-medium {
+    @include image();
+    width: $image-medium-size;
+    height: $image-medium-size;
 }
 
-&.image-large {
- width: $image-large-size;
- height: $image-large-size;
+.ain-image-large {
+    @include image();
+    width: $image-large-size;
+    height: $image-large-size;
 }
 
-.image-bordered {
-  border: $image-bordered-border;
+.ain-image-bordered {
+    @include image();
+    border: $image-bordered-border;
 }
 
-.image-bordered-primary {
- border-color: $colors-primary-border;
-
- @extend .image-bordered;
+.ain-image-bordered-primary {
+    @include image-bordered();
+    border-color: $colors-primary-border;
 }
 
-.image-bordered-success {
- border-color: $colors-success-border;
-
- @extend .image-bordered;
+.ain-image-bordered-success {
+    @include image-bordered();
+    border-color: $colors-success-border;
 }
 
-.image-bordered-warning {
- border-color: $colors-warning-border;
-
- @extend .image-bordered;
+.ain-image-bordered-warning {
+    @include image-bordered();
+    border-color: $colors-warning-border;
 }
 
-.image-bordered-danger {
- border-color: $colors-danger-border;
-
- @extend .image-bordered;
+.ain-image-bordered-danger {
+    @include image-bordered();
+    border-color: $colors-danger-border;
 }

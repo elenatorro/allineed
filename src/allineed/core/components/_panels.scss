@@ -1,80 +1,79 @@
 
 // Variables
 
-
-$panel-border-radius:              $base-elements-border-radius;
-$panel-border:                     1px solid $colors-base-border;
-$panel-padding:                    $base-padding-size;
-$panel-margin:                     $base-margin-size * 2;
-
+$panel-border-radius: $base-elements-border-radius;
+$panel-border: 1px solid $colors-base-border;
+$panel-padding: $base-padding-size;
+$panel-margin: $base-margin-size * 2;
 
 // Mixins
-
-
 @mixin panel-part() {
- margin: 0;
- padding: $panel-padding;
+    margin: 0;
+    padding: $panel-padding;
+}
+
+@mixin panel() {
+    display: block;
+    margin-bottom: $panel-margin;
+    width: 100%;
+    border: $panel-border;
+    border-radius: $panel-border-radius;
+
+    .ain-panel-header {
+        border-bottom: $panel-border;
+        @include panel-part();
+    }
+
+    .ain-panel-body {
+        @include panel-part();
+    }
+
+    .ain-panel-footer {
+        border-top: $panel-border;
+        @include panel-part();
+    }
 }
 
 @mixin panel-style($border-color) {
- border-color: $border-color;
+    border-color: $border-color;
 
- > .panel-header {
-  border-color: $border-color;
-  background-color: $border-color;
-  color: white;
- }
+    > .ain-panel-header {
+        border-color: $border-color;
+        background-color: $border-color;
+        color: white;
+    }
 
- > .panel-body {
-  border-color: $border-color;
- }
+    > .ain-panel-body {
+        border-color: $border-color;
+    }
 
- > .panel-footer {
-  border-color: $border-color;
- }
+    > .ain-panel-footer {
+        border-color: $border-color;
+    }
 }
-
 
 // Panels
 
+.ain-panel {
+    @include panel();
+}
 
-.panel {
- display: block;
- margin-bottom: $panel-margin;
- width: 100%;
- border: $panel-border;
- border-radius: $panel-border-radius;
+.ain-panel-primary {
+    @include panel();
+    @include panel-style($colors-primary-border);
+}
 
- .panel-header {
-  border-bottom: $panel-border;
+.ain-panel-success {
+    @include panel();
+    @include panel-style($colors-success-border);
+}
 
-  @include panel-part();
- }
+.ain-panel-danger {
+    @include panel();
+    @include panel-style($colors-danger-border);
+}
 
- .panel-body {
-  @include panel-part();
- }
-
- .panel-footer {
-  border-top: $panel-border;
-
-  @include panel-part();
- }
-
- &.panel-primary {
-  @include panel-style($colors-primary-border);
- }
-
- &.panel-success {
-  @include panel-style($colors-success-border);
- }
-
- &.panel-danger {
-  @include panel-style($colors-danger-border);
- }
-
- &.panel-warning {
-  @include panel-style($colors-warning-border);
- }
-
+.ain-panel-warning {
+    @include panel();
+    @include panel-style($colors-warning-border);
 }

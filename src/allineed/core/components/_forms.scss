@@ -1,153 +1,160 @@
 
 // Variables
 
+$form-input-background-color: $colors-white;
+$form-input-border-radius: $base-elements-border-radius;
+$form-input-border: 1px solid $colors-base-border;
+$form-input-height: $base-texts-height;
+$form-input-padding: 6px 10px;
+$form-input-font-size: $base-font-size;
 
-$form-input-background-color:  $colors-white;
-$form-input-border-radius:     $base-elements-border-radius;
-$form-input-border:            1px solid $colors-base-border;
-$form-input-height:            $base-texts-height;
-$form-input-padding:           6px 10px;
-$form-input-font-size:         $base-font-size;
+$form-input-focus-border: 1px solid $colors-base-hover;
 
-$form-input-focus-border:      1px solid $colors-base-hover;
+$form-textarea-min-height: $base-texts-height * 2;
+$form-textarea-padding: 6px 0;
 
-$form-textarea-min-height:     $base-texts-height * 2;
-$form-textarea-padding:        6px 0;
+$form-label-margin: 0 0 0.5rem 0;
+$form-label-body-margin: 0 0.5rem 0 0;
+$form-label-font-weight: 600px;
+$form-label-body-font-weight: normal;
 
-$form-label-margin:            0 0 .5rem 0;
-$form-label-body-margin:       0 .5rem 0 0;
-$form-label-font-weight:       600px;
-$form-label-body-font-weight:  normal;
+// Mixins
+@mixin input() {
+    height: $form-input-height;
 
+    box-sizing: border-box;
+    padding: $form-input-padding;
 
-// Fonts
+    border: $form-input-border;
+    border-radius: $form-input-border-radius;
+    background-color: $form-input-background-color;
 
+    font-size: $form-input-font-size;
 
-input, textarea, select, option {
- font-size: $form-input-font-size;
+    box-shadow: none;
+
+    &:focus {
+        outline: 0;
+        border: $form-input-focus-border;
+    }
 }
 
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-  box-sizing:       border-box;
-  padding:          $form-input-padding;
-  height:           $form-input-height;
-  border:           $form-input-border;
-  border-radius:    $form-input-border-radius;
-  background-color: $form-input-background-color;
-  box-shadow:       none;
-
-  &.input-primary {
-   border-color: $colors-primary-border;
-   color: $colors-primary-background;
-  }
-
-  &.input-warning {
-   border-color: $colors-warning-border;
-   color: $colors-warning-background;
-  }
-
-  &.input-success {
-   border-color: $colors-success-border;
-   color: $colors-success-background;
-  }
-
-  &.input-danger {
-   border-color: $colors-danger-border;
-   color: $colors-danger-background;
-  }
+@mixin form-control() {
+    margin: 1rem 0;
 }
+
+// Forms
+
+input.ain-input,
+option.ain-option,
+select.ain-select,
+textarea.ain-textarea {
+    @include input();
+}
+
+.ain-input-primary {
+    @include input();
+    color: $colors-primary-background;
+    border-color: $colors-primary-border;
+
+    &:focus {
+        border-color: $colors-primary-border-hover;
+    }
+}
+
+.ain-input-warning {
+    @include input();
+    color: $colors-warning-background;
+    border-color: $colors-warning-border;
+
+    &:focus {
+        border-color: $colors-warning-border-hover;
+    }
+}
+
+.ain-input-success {
+    @include input();
+    color: $colors-success-background;
+    border-color: $colors-success-border;
+
+    &:focus {
+        border-color: $colors-success-border-hover;
+    }
+}
+
+.ain-input-danger {
+    @include input();
+    color: $colors-danger-background;
+    border-color: $colors-danger-border;
+
+    &:focus {
+        border-color: $colors-danger-border-hover;
+    }
+}
+
 /* Removes awkward default styles on some inputs for iOS */
+
 input[type="email"],
 input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
 input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance:    none;
-  appearance:         none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-textarea {
-  padding-bottom: $form-textarea-padding;
-  min-height:     $form-textarea-min-height;
+textarea.ain-textarea {
+    min-height: $form-textarea-min-height;
+    padding-bottom: $form-textarea-padding;
 }
 
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-  outline: 0;
-  border:  $form-input-focus-border;
+.ain-label,
+.ain-legend {
+    display: block;
+    margin-bottom: $form-label-margin;
+    font-weight: $form-label-font-weight;
 
-  &.input-primary {
-   border-color: $colors-primary-border-hover;
-  }
-  &.input-success {
-   border-color: $colors-success-border-hover;
-  }
-  &.input-warning {
-   border-color: $colors-warning-border-hover;
-  }
-  &.input-danger {
-   border-color: $colors-danger-border-hover;
-  }
+    &.ain-label-body {
+        display: inline-block;
+        margin-left: $form-label-body-margin;
+        font-weight: $form-label-body-font-weight;
+    }
 }
 
-label,
-legend {
-  display:       block;
-  margin-bottom: $form-label-margin;
-  font-weight:   $form-label-font-weight;
+.ain-fieldset {
+    padding: 0;
+    border-width: 0;
 }
 
-fieldset {
-  padding:      0;
-  border-width: 0;
+input[type="checkbox"].ain-checkbox,
+input[type="radio"].ain-radio {
+    display: inline;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
+.ain-form-control {
+    @include form-control();
 }
 
-label > .label-body {
-  display:     inline-block;
-  margin-left: $form-label-body-margin;
-  font-weight: $form-label-body-font-weight;
+.ain-form-control-primary {
+    @include form-control();
+    color: $colors-primary-background;
 }
 
-.form-control {
- margin: 1rem 0;
+.ain-form-control-success {
+    @include form-control();
+    color: $colors-success-background;
+}
 
- &.input-primary {
-  color: $colors-primary-background;
- }
+.ain-form-control-warning {
+    @include form-control();
+    color: $colors-warning-background;
+}
 
- &.input-success {
-  color: $colors-success-background;
- }
-
- &.input-warning {
-  color: $colors-warning-background;
- }
-
- &.input-danger {
-  color: $colors-danger-background;
- }
+.ain-form-control-danger {
+    @include form-control();
+    color: $colors-danger-background;
 }
