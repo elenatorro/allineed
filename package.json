@@ -1,6 +1,6 @@
 {
     "name": "allineed",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "All I Need: Simple and minimalist CSS framework",
     "main": "assets/scss/allineed/allineed.css",
     "authors": [
